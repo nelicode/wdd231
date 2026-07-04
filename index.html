@@ -15,26 +15,26 @@
         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Lato:wght@300;400;700&display=swap"
         rel="stylesheet">
 
-    <!-- CSS (solo una vez cada uno) -->
+    <!-- CSS -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
 
-    <!-- JavaScript (con defer) -->
+    <!-- JavaScript -->
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
     <script src="scripts/courses.js" defer></script>
 </head>
 
 <body>
-    <!-- ===== HEADER ===== -->
+    <!-- HEADER -->
     <header>
-        <img src="images/student-photo.jpg" alt="Nelida Colque Logo" width="1" height="1">
+        <img src="images/logo.svg" alt="Nelida Colque Logo" width="1" height="1">
         <span>Nelida Colque</span>
         <button id="nav-button" class="hamburger" aria-label="Navigation menu"></button>
     </header>
 
-    <!-- ===== NAVIGATION ===== -->
+    <!-- NAVIGATION -->
     <nav id="nav-bar" class="navigation">
         <ul>
             <li class="current"><a href="index.html">Home</a></li>
@@ -43,30 +43,21 @@
         </ul>
     </nav>
 
-    <!-- ===== MAIN ===== -->
+    <!-- MAIN -->
     <main>
         <h1>Home</h1>
 
+        <!-- SECTION 1: About Me -->
         <section class="about-section">
             <h2>About Me</h2>
             <div class="about-content">
                 <p>
-                    Hello, I'm Nelida Colque Salas, a student, a project manager, and a working developer.
+                    Hello, I'm Nelida Colque Salas — a passionate software development student from Arequipa, Peru. I
+                    work as a project
+                    manager and front-end developer, currently advancing my skills through WDD 131 and WDD 231.
                 </p>
                 <img src="images/student-photo.jpg" alt="student photo" width="200" height="200" loading="lazy">
             </div>
-        </section> <!-- ← CIERRE CORRECTO -->
-
-        <!-- ===== SECTION 2: Web Certificate Courses ===== -->
-        <section class="courses-section">
-            <h2>Web Certificate Courses</h2>
-            <!-- ... -->
-        </section>
-
-        <!-- ===== SECTION 2: Web Certificate Courses ===== -->
-        <section class="courses-section">
-            <h2>Web Certificate Courses</h2>
-            <!-- El resto de tu código... -->
         </section>
 
         <!-- SECTION 2: Web Certificate Courses -->
@@ -87,9 +78,8 @@
         </section>
     </main>
 
-    <!-- ===== FOOTER ===== -->
+    <!-- FOOTER -->
     <footer>
-        <!-- Social Media -->
         <div class="social-icons">
             <a href="https://github.com/nelicode" target="_blank" aria-label="GitHub">
                 <img src="images/github.svg" alt="GitHub" width="48" height="48" loading="lazy">
@@ -102,10 +92,7 @@
             </a>
         </div>
 
-        <!-- Copyright -->
         <p>&copy; <span id="current-year"></span> Nelida Colque Salas - Arequipa, Peru</p>
-
-        <!-- Last Modified -->
         <p>Last Modification: <span id="last-modified"></span></p>
     </footer>
 </body>
