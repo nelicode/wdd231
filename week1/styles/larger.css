@@ -1,0 +1,67 @@
+/* ===== ESCRITORIO ===== */
+@media screen and (min-width: 768px) {
+    #hamburger-menu {
+        display: none;
+    }
+
+    #main-nav {
+        display: block !important;
+    }
+
+    #main-nav ul {
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 1rem;
+    }
+
+    #main-nav ul li a {
+        padding: 0.5rem 1.5rem;
+    }
+
+    .about-container {
+        min-height: 400px;
+    }
+
+    .about-half {
+        padding: 2.5rem;
+    }
+
+    .about-text-half h2 {
+        font-size: 1.8rem;
+    }
+
+    .about-text-half p {
+        font-size: 1.6rem;
+    }
+
+    .about-photo-half h2 {
+        font-size: 1.8rem;
+    }
+
+    .student-photo img {
+        max-height: 280px;
+    }
+
+    #course-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .about-container {
+        min-height: 450px;
+    }
+
+    .about-half {
+        padding: 3rem;
+    }
+
+    .student-photo img {
+        max-height: 320px;
+    }
+
+    #course-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
