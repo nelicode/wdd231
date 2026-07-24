@@ -363,10 +363,12 @@ h2 {
 /* FOOTER */
 footer {
     background: var(--primary-color);
-    color: white;
+    color: rgb(234, 233, 233);
     text-align: center;
     padding: 2rem;
     width: 100%;
+    margin: 0;
+    border-radius: 0;
 }
 
 .footer-social {
