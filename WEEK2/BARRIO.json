@@ -1,0 +1,36 @@
+{"Family_name": "Santos",
+"move_in_date": "2024-05-02",
+"number_of_people": 2,
+"visited_by_bishopric": true,
+"family_members": [
+{
+    "name": "Pedro Santos",
+    "gender": "Male",
+    "birthdate": "2003-05-25"
+
+},
+{
+    "name": "Maria Santos",
+    "gender": "Female",
+    "birthdate": "2001-05-02"
+
+        }
+    ]
+}
+
+
+
+
+
+
+
+
+
+apellido
+la fecha en que la familia se mudó al barrio
+el número de personas en la familia (número de registros)
+¿Si es visitado por el obispado?
+datos de miembros individuales de la familia
+nombre
+género
+fecha de nacimiento
