@@ -259,7 +259,7 @@ h2 {
     align-items: center;
     /* ← Centra verticalmente */
     justify-content: center;
-    gap: 12rem;
+    gap: 30rem;
     margin-bottom: 0;
     padding: 0 0 0.1rem;
     min-height: 100px;
