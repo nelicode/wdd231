@@ -1,97 +1,44 @@
-/* see auto column grid in CSS in the .grid class rule */
-
 body {
-	font-family: Roboto, sans-serif;
-}
-
-h1 {
-	text-align: center;
-}
-
-h2 {
-	margin: 1rem 0;
-	text-shadow: 0 0 30px #111;
-}
-
-.key {
-	position: absolute;
-	top: 5px;
-	right: 5px;
-	padding: 0.5rem;
-	background-color: black;
-	color: white;
-	display: grid;
-	grid-template-columns: 0.8rem 1fr;
-	grid-gap: 0.25rem;
-}
-
-#keytitle {
-	font-size: larger;
-	grid-column: 1 / 3;
-}
-
-.key > div {
-	width: 0.75rem;
-	height: 0.75rem;
-	border: 1px solid #bbb;
-}
-
-.key > p {
-	display: inline;
-	font-size: 0.75rem;
-}
-
-p {
+	font-family: 'Roboto', sans-serif;
 	margin: 0;
+	padding: 0;
+	background: #f9f9f9;
 }
 
-.grid {
+header,
+footer {
+	text-align: center;
+	background: #004080;
+	color: white;
+	padding: 1rem;
+}
+
+main {
+	padding: 1rem;
+}
+
+#cards {
 	display: grid;
-	grid-gap: 0.5rem;
-	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 1rem;
 }
 
 section {
-	margin: 0.5rem;
-	padding: 0.5rem;
-	background-color: #eee;
-	border: 1px solid rgb(0 0 0 / 10%);
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-section > p {
-	min-height: 60px;
-	font-size: smaller;
+	background: white;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	padding: 1rem;
 	text-align: center;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-img {
-	width: auto;
-	max-width: 325px;
-	box-shadow: 0 0 30px #777;
-	height: 200px;
-	border: 1px solid #111;
+section h2 {
+	font-size: 1.2rem;
+	margin-bottom: 0.5rem;
 }
 
-li > img {
-	width: auto;
-	height: 30px;
-}
-
-.caption {
-	position: absolute;
-	top: 1.5rem;
-	right: 2rem;
-	border: 1px solid #ccc;
-	background-color: lightyellow;
-	padding: 0.25rem;
-	display: grid;
-	align-items: center;
-	grid-template-columns: 1rem 1fr;
-}
-
-.un {
-	list-style: none;
+section img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 4px;
 }
