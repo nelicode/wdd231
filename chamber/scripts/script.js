@@ -185,6 +185,11 @@ if (menuButton && mainNav) {
 }
 
 // ============================================
+// MOSTRAR FECHA DE ÚLTIMA MODIFICACIÓN
+// ============================================
+document.getElementById('lastModified').textContent = document.lastModified;
+
+// ============================================
 // 9. EJECUTAR
 // ============================================
 getMembers();
