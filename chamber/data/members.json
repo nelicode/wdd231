@@ -1,0 +1,94 @@
+{
+    "members": [
+        {
+            "name": "IDWEB",
+            "address": "2115 S Vista Avenue, Boise, ID 83705",
+            "phone": "(208) 342-9386",
+            "website": "https://idahowebsites.com/",
+            "image": "images/idweb.jpg",
+            "membership": 3,
+            "description": "Professional web development and design services for businesses of all sizes.",
+            "category": "Web Design"
+        },
+        {
+            "name": "GraphicZen",
+            "address": "1788 E Summerplace Court, Meridian, ID 83646",
+            "phone": "(208) 631-0640",
+            "website": "https://graphiczen.com/",
+            "image": "images/graphiczen.jpg",
+            "membership": 2,
+            "description": "Creative graphic design and branding solutions for modern businesses.",
+            "category": "Graphic Design"
+        },
+        {
+            "name": "SURGE Web Design",
+            "address": "4072 E Arch Drive, Meridian, ID 83646",
+            "phone": "(208) 631-4984",
+            "website": "https://www.surgewebdesign.com/",
+            "image": "images/surge.jpg",
+            "membership": 3,
+            "description": "Innovative web design and digital marketing strategies to grow your business.",
+            "category": "Web Design"
+        },
+        {
+            "name": "Peppershock",
+            "address": "1215 3rd Street, Nampa, ID 83651",
+            "phone": "(208) 461-5070",
+            "website": "https://www.peppershock.com/",
+            "image": "images/peppershock.jpg",
+            "membership": 2,
+            "description": "Full-service marketing and advertising agency with a creative edge.",
+            "category": "Marketing"
+        },
+        {
+            "name": "Flash Tech Services",
+            "address": "Star, Idaho 83669",
+            "phone": "(208) 488-5810",
+            "website": "https://flagsintechnicalservices.com/",
+            "image": "images/flashtech.jpg",
+            "membership": 1,
+            "description": "Technical support and IT solutions for homes and small businesses.",
+            "category": "IT Services"
+        },
+        {
+            "name": "Metro Express Car Wash",
+            "address": "1725 E Overland Road, Meridian, ID 83642",
+            "phone": "(208) 888-4073",
+            "website": "https://www.metroexpresscarwash.com/",
+            "image": "images/metroexpress.jpg",
+            "membership": 1,
+            "description": "High-quality car wash and detailing services with eco-friendly products.",
+            "category": "Automotive"
+        },
+        {
+            "name": "Boise Digital Solutions",
+            "address": "1010 W Main Street, Boise, ID 83702",
+            "phone": "(208) 555-0123",
+            "website": "https://boisedigitalsolutions.com/",
+            "image": "images/boisedigital.jpg",
+            "membership": 2,
+            "description": "Digital transformation and IT consulting for forward-thinking companies.",
+            "category": "Consulting"
+        },
+        {
+            "name": "Idaho Creative Studios",
+            "address": "555 E Park Boulevard, Boise, ID 83712",
+            "phone": "(208) 555-0456",
+            "website": "https://idahocreativestudios.com/",
+            "image": "images/idahocreative.jpg",
+            "membership": 3,
+            "description": "Full-service creative agency offering design, video, and content creation.",
+            "category": "Creative Services"
+        },
+        {
+            "name": "Mountain View Realty",
+            "address": "777 N Eagle Road, Eagle, ID 83616",
+            "phone": "(208) 555-0789",
+            "website": "https://mountainviewrealty.com/",
+            "image": "images/mountainview.jpg",
+            "membership": 2,
+            "description": "Real estate services specializing in residential and commercial properties.",
+            "category": "Real Estate"
+        }
+    ]
+}

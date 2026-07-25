@@ -1,0 +1,293 @@
+/* ============================================
+   small.css - VERSIÓN MÓVIL
+   ============================================ */
+
+/* HEADER COMPACTO */
+header {
+    background: linear-gradient(135deg, #0d0e0f, #060606);
+    color: white;
+    padding: 12px 15px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.header-logo {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.header-text h1 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.header-text p {
+    font-size: 0.6rem;
+    opacity: 0.85;
+    margin: 0;
+    white-space: nowrap;
+}
+
+/* ============================================
+   MENÚ HAMBURGUESA - MÓVIL
+   ============================================ */
+
+/* Botón visible en móvil */
+.menu-toggle {
+    display: block;
+    /* ← Se ve en móvil */
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin-left: auto;
+}
+
+/* Navegación oculta en móvil por defecto */
+header nav {
+    display: none;
+    /* ← Oculto en móvil */
+    flex-direction: column;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    border-radius: 12px;
+    padding: 15px 0;
+    margin-top: 10px;
+    gap: 5px;
+}
+
+/* Navegación visible cuando se abre */
+header nav.open {
+    display: flex;
+    /* ← Se muestra al hacer clic en ☰ */
+}
+
+header nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.7rem;
+    padding: 4px 10px;
+    border-radius: 20px;
+    transition: background 0.3s ease;
+}
+
+header nav a:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* DIRECTORY HEADER - Título a la izquierda, botones al centro */
+.directory-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 0 20px 0;
+    gap: 10px;
+}
+
+.directory-header h2 {
+    font-size: 1.8rem;
+    color: #1a2a3a;
+    margin: 0;
+    text-align: left;
+}
+
+.view-controls {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    width: 100%;
+}
+
+.view-controls button {
+    padding: 10px 30px;
+    border: 2px solid #2c3e50;
+    background: white;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #2c3e50;
+}
+
+.view-controls button:hover {
+    background: #2c3e50;
+    color: white;
+}
+
+.view-controls button.active {
+    background: #2c3e50;
+    color: white;
+}
+
+/* GRID - 1 COLUMNA */
+#cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 10px 0;
+}
+
+#cards section {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e8ecf1;
+    display: flex;
+    flex-direction: column;
+}
+
+#cards section h2 {
+    font-size: 1.1rem;
+    color: #1a2a3a;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #c0392b;
+    padding-bottom: 8px;
+    text-align: center;
+    width: 100%;
+}
+
+.card-content {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    width: 100%;
+}
+
+.card-image {
+    width: 80px;
+    height: 80px;
+    min-width: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #ecf0f1;
+    flex-shrink: 0;
+}
+
+.card-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.card-info p {
+    font-size: 0.8rem;
+    color: #444;
+    line-height: 1.4;
+    word-break: break-word;
+    margin: 2px 0;
+}
+
+.card-info .tagline {
+    font-weight: 600;
+    color: #2c3e50;
+    font-size: 0.85rem;
+}
+
+.card-info a {
+    color: #2c3e50;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+.card-info a:hover {
+    color: #c0392b;
+    text-decoration: underline;
+}
+
+.card-info p:last-of-type {
+    font-weight: 600;
+    color: #f39c12;
+    font-size: 0.85rem;
+    margin-top: 3px;
+}
+
+/* FOOTER COMPACTO */
+footer {
+    padding: 15px 15px;
+}
+
+.footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+}
+
+.footer-left,
+.footer-right {
+    text-align: center;
+}
+
+.footer-left p,
+.footer-right p {
+    margin: 3px 0;
+    line-height: 1.6;
+    font-size: 0.7rem;
+}
+
+.footer-center {
+    order: -1;
+    gap: 15px;
+}
+
+.footer-center img {
+    width: 25px;
+    height: 25px;
+}
+
+#mainNav {
+    display: none;
+    /* ← Oculto */
+    flex-direction: column;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    border-radius: 12px;
+    padding: 15px 0;
+    margin-top: 10px;
+    gap: 5px;
+}
+
+#mainNav.open {
+    display: flex;
+    /* ← Visible */
+}
+
+#mainNav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 12px 20px;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#mainNav a:last-child {
+    border-bottom: none;
+}
+
+#mainNav a:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
