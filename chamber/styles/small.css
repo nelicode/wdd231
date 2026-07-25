@@ -62,7 +62,89 @@
     .directory-header h2 {
         font-size: 1.8rem;
     }
+/* ============================================
+   HOME GRID - MÓVIL
+   ============================================ */
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 15px 0;
+}
 
+.events,
+.weather,
+.spotlights {
+    padding: 15px;
+    border-radius: 12px;
+}
+
+.events h2,
+.weather h2,
+.spotlights h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.events p {
+    font-size: 0.9rem;
+    padding: 6px 10px;
+}
+
+#current-weather p:first-child {
+    font-size: 2rem;
+}
+
+#current-weather p:last-child {
+    font-size: 1rem;
+}
+
+#forecast {
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#forecast p {
+    font-size: 0.9rem;
+    flex: 1;
+    min-width: 60px;
+}
+
+.member-card {
+    padding: 12px;
+}
+
+.member-card img {
+    width: 60px;
+    height: 60px;
+}
+
+.member-card h3 {
+    font-size: 1rem;
+}
+
+.member-card p {
+    font-size: 0.8rem;
+}
+/* ============================================
+   SPOTLIGHTS - MÓVIL
+   ============================================ */
+#spotlight-container {
+    gap: 15px;
+}
+
+.member-card {
+    padding: 15px;
+    border-radius: 12px;
+}
+
+.member-card h2 {
+    font-size: 1.1rem;
+}
+
+.member-card p {
+    font-size: 0.8rem;
+}
     .view-controls {
         gap: 15px;
         width: 100%;

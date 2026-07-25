@@ -2,6 +2,8 @@
     "members": [
         {
             "name": "IDWEB",
+            "tagline": "Web Development & Design",
+            "email": "info@idahowebsites.com",
             "address": "2115 S Vista Avenue, Boise, ID 83705",
             "phone": "(208) 342-9386",
             "website": "https://idahowebsites.com/",
@@ -12,6 +14,8 @@
         },
         {
             "name": "GraphicZen",
+            "tagline": "Creative Graphic Design & Branding",
+            "email": "info@graphiczen.com",
             "address": "1788 E Summerplace Court, Meridian, ID 83646",
             "phone": "(208) 631-0640",
             "website": "https://graphiczen.com/",
@@ -22,6 +26,8 @@
         },
         {
             "name": "SURGE Web Design",
+            "tagline": "Innovative Web Design & Marketing",
+            "email": "info@surgewebdesign.com",
             "address": "4072 E Arch Drive, Meridian, ID 83646",
             "phone": "(208) 631-4984",
             "website": "https://www.surgewebdesign.com/",
@@ -32,6 +38,8 @@
         },
         {
             "name": "Peppershock",
+            "tagline": "Full-Service Marketing & Advertising",
+            "email": "info@peppershock.com",
             "address": "1215 3rd Street, Nampa, ID 83651",
             "phone": "(208) 461-5070",
             "website": "https://www.peppershock.com/",
@@ -42,6 +50,8 @@
         },
         {
             "name": "Flash Tech Services",
+            "tagline": "Technical Support & IT Solutions",
+            "email": "info@flashtech.com",
             "address": "Star, Idaho 83669",
             "phone": "(208) 488-5810",
             "website": "https://flagsintechnicalservices.com/",
@@ -52,6 +62,8 @@
         },
         {
             "name": "Metro Express Car Wash",
+            "tagline": "Eco-Friendly Car Wash & Detailing",
+            "email": "info@metroexpress.com",
             "address": "1725 E Overland Road, Meridian, ID 83642",
             "phone": "(208) 888-4073",
             "website": "https://www.metroexpresscarwash.com/",
@@ -62,6 +74,8 @@
         },
         {
             "name": "Boise Digital Solutions",
+            "tagline": "Digital Transformation & IT Consulting",
+            "email": "info@boisedigital.com",
             "address": "1010 W Main Street, Boise, ID 83702",
             "phone": "(208) 555-0123",
             "website": "https://boisedigitalsolutions.com/",
@@ -72,6 +86,8 @@
         },
         {
             "name": "Idaho Creative Studios",
+            "tagline": "Creative Agency: Design, Video & Content",
+            "email": "info@idahocreative.com",
             "address": "555 E Park Boulevard, Boise, ID 83712",
             "phone": "(208) 555-0456",
             "website": "https://idahocreativestudios.com/",
@@ -82,6 +98,8 @@
         },
         {
             "name": "Mountain View Realty",
+            "tagline": "Residential & Commercial Real Estate",
+            "email": "info@mountainviewrealty.com",
             "address": "777 N Eagle Road, Eagle, ID 83616",
             "phone": "(208) 555-0789",
             "website": "https://mountainviewrealty.com/",
