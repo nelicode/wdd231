@@ -1,5 +1,9 @@
 /* ============================================
-   ESTILOS GENERALES
+   larger.css - ESCRITORIO (y estilos base)
+   ============================================ */
+
+/* ============================================
+   ESTILOS BASE (para todos los dispositivos)
    ============================================ */
 * {
     margin: 0;
@@ -9,357 +13,96 @@
 
 body {
     font-family: 'Roboto', 'Segoe UI', sans-serif;
-    background: linear-gradient(135deg,
-            #0d74be,
-            #e738d6,
-            #de5151,
-            #eaae38,
-            #a4c4f4);
-    min-height: 100vh;    color: #2d2d2d;
-    padding: 20px;
+    background: linear-gradient(135deg, #0d74be, #e738d6, #de5151, #eaae38, #a4c4f4);
     min-height: 100vh;
+    color: #2d2d2d;
+    padding: 20px;
     display: flex;
     flex-direction: column;
 }
 
-/* ============================================
-   HEADER - CONTENEDOR PRINCIPAL
-   ============================================ */
-/* ============================================
-   HEADER - TODO EN UNA SOLA LÍNEA
-   ============================================ */
 header {
     background: linear-gradient(135deg, #0d0e0f, #060606);
     color: white;
-    padding: 60px 40px;
     border-radius: 20px;
     margin-bottom: 30px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: nowrap;
-    /* ← TODO EN UNA LÍNEA */
-    gap: 10px;
-    
 }
 
-/* ============================================
-   LOGO + TEXTO - EN UNA SOLA LÍNEA
-   ============================================ */
 .header-content {
     display: flex;
     align-items: center;
-    gap: 10px;
     flex-shrink: 0;
-    flex-wrap: nowrap;
 }
 
 .header-logo {
-    width: 40px;
-    height: 40px;
     object-fit: contain;
     flex-shrink: 0;
 }
 
-.header-text {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    flex-wrap: nowrap;
-}
-
 .header-text h1 {
-    font-size: 1.2rem;
     font-weight: 700;
     margin: 0;
     white-space: nowrap;
-    /* ← TÍTULO EN UNA LÍNEA */
 }
 
 .header-text p {
-    font-size: 0.7rem;
     opacity: 0.85;
     margin: 0;
     white-space: nowrap;
-    /* ← DIRECCIÓN Y CONTACTO EN UNA LÍNEA */
 }
 
-/* ============================================
-   NAVEGACIÓN - A LA DERECHA
-   ============================================ */
 header nav {
     display: flex;
     justify-content: flex-end;
-    gap: 10px;
-    flex-wrap: nowrap;
     flex-shrink: 0;
 }
 
 header nav a {
     color: #ffffff;
     text-decoration: none;
-    text-align: right;
-    font-size: 2rem;
-    padding: 6px 14px;
-    border-radius: 25px;
+    transition: background 0.3s ease;
     font-weight: 500;
-    
 }
 
 header nav a:hover {
     background: rgba(255, 255, 255, 0.15);
 }
-/* ============================================
-   BOTÓN HAMBURGUESA - OCULTO EN ESCRITORIO
-   ============================================ */
+
 .menu-toggle {
-    display: none;
-    /* ← No se ve en escritorio */
-}
-
-.header-content {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    flex-shrink: 0;
-}
-.header-logo {
-    width: 80px;
-    height: 80px;
-    object-fit: contain;
-    flex-shrink: 0;
-}
-.header-text {
-    text-align: left;
-    /* ← Texto a la izquierda */
-    flex: 1;
-}
-.header-text h1 {
-    font-size: 2rem;
-    letter-spacing: 2px;
-    font-weight: 700;
-    margin-bottom: 2px;
-}
-
-.header-text p {
-    font-size: 0.9rem;
-    opacity: 0.85;
-    margin: 2px 0;
-}
-/* ============================================
-   MAIN - 95% de ancho
-   ============================================ */
-main {
-    flex: 1;
-    max-width: 95%;
-    margin: 0 auto;
-    padding: 0;
-    width: 100%;
-}
-
-/* ============================================
-   GRID DE 3 COLUMNAS
-   ============================================ */
-#cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-    padding: 10px 0;
-}
-
-/* ============================================
-   TARJETA INDIVIDUAL
-   ============================================ */
-#cards section {
-    background: #ffffff;
-    border-radius: 16px;
-    padding: 40px 20px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 1px solid #e8ecf1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-#cards section:hover {
-    box-shadow: 0 12px 30px rgba(27, 26, 26, 0.15);
-}
-
-/* ============================================
-   NOMBRE DE LA EMPRESA (CENTRADO ARRIBA)
-   ============================================ */
-#cards section h2 {
-    font-size: 1.4rem;
-    color: #040404;
-    margin-bottom: 15px;
-    border-bottom: 3px solid #c0392b;
-    padding-bottom: 10px;
-    font-weight: 700;
-    text-align: center;
-    /* ← CENTRADO */
-    width: 100%;
-}
-
-/* ============================================
-   CONTENEDOR: Imagen + Información (lado a lado)
-   ============================================ */
-.card-content {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    /* ← Centra verticalmente */
-    width: 100%;
-}
-
-/* ============================================
-   IMAGEN (Izquierda) - Tamaño fijo
-   ============================================ */
-.card-image {
-    width: 120px;
-    /* ← Tamaño fijo */
-    height: 120px;
-    /* ← Tamaño fijo */
-    min-width: 120px;
-    /* ← Evita que se encoja */
-    object-fit: cover;
-    /* ← Recorta la imagen para que encaje */
-    border-radius: 12px;
-    border: 3px solid #ecf0f1;
-    flex-shrink: 0;
-    /* ← Evita que se encoja */
-}
-
-/* ============================================
-   INFORMACIÓN (Derecha) - Ocupa el resto
-   ============================================ */
-.card-info {
-    flex: 1;
-    /* ← Ocupa el espacio restante */
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-}
-
-.card-info p {
-    font-size: 1.2rem;
-    color: #444;
-    line-height: 1.5;
-    word-break: break-word;
-    margin: 2px 0;
-}
-
-/* Tag Line */
-.card-info .tagline {
-    font-weight: 600;
-    color: #2c3e50;
-    font-size: 0.9rem;
-}
-
-/* Enlaces */
-.card-info a {
-    color: #2c3e50;
-    text-decoration: none;
-    font-weight: 500;
-}
-
-.card-info a:hover {
-    color: #c0392b;
-    text-decoration: underline;
-}
-
-/* ============================================
-   MODO LISTA - TABLA CON 4 COLUMNAS Y ZEBRA STRIPING
-   ============================================ */
-#cards .list-table {
-    width: 95%;
-    max-width: 1400px;
-    margin: 0 auto;
-    border-collapse: collapse;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    background: white;
-    font-size: 2rem;
-}
-
-#cards .list-table thead {
-    background: #2c3e50;
+    background: none;
+    border: none;
     color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 5px 10px;
 }
 
-#cards .list-table thead th {
-    padding: 20px 200px;
-    text-align: left;
-    font-weight: 600;
-    font-size: 3rem;
-    letter-spacing: 3px;
+.directory-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 0 30px 0;
+    gap: 15px;
 }
 
-#cards .list-table tbody td {
-    padding: 35px 20px;
-    border-bottom: 1px solid #e8ecf1;
-    font-size: 1.3rem;
-    color: #444;
-    vertical-align: middle;
-}
-
-/* Zebra striping - filas pares */
-#cards .list-table tbody tr.even {
-    background-color: #f8f9fa;
-}
-
-/* Zebra striping - filas impares */
-#cards .list-table tbody tr.odd {
-    background-color: #ffffff;
-}
-
-/* Efecto hover en filas */
-#cards .list-table tbody tr:hover {
-    background-color: #e8ecf1;
-    transition: background 0.3s ease;
-}
-
-/* Enlaces en la tabla */
-#cards .list-table tbody td a {
-    color: #2c3e50;
-    text-decoration: none;
-    font-weight: 500;
-    word-break: break-all;
-}
-
-#cards .list-table tbody td a:hover {
-    color: #6c5ce7;
-    text-decoration: underline;
-}
-
-/* Primera columna (Website) en negrita */
-#cards .list-table tbody td:first-child {
-    font-weight: 600;
+.directory-header h2 {
     color: #1a2a3a;
+    margin: 0;
+    text-align: left;
 }
 
-/* ============================================
-   BOTONES GRID Y LIST - CENTRADOS Y GRANDES
-   ============================================ */
 .view-controls {
     display: flex;
-    gap: 20px;
-    /* ← Más espacio entre botones */
     justify-content: center;
-    align-self: center;
 }
 
 .view-controls button {
-    padding: 14px 40px;
-    /* ← Botones más grandes */
     border: 2px solid #2c3e50;
     background: white;
-    border-radius: 30px;
-    font-size: 1.2rem;
-    /* ← Texto más grande */
-    font-weight: 700;
     cursor: pointer;
     transition: all 0.3s ease;
     color: #2c3e50;
@@ -375,31 +118,146 @@ main {
     color: white;
 }
 
-/* Nivel de membresía (estrellas) */
+main {
+    flex: 1;
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+}
+
+#cards {
+    display: grid;
+    padding: 10px 0;
+}
+
+#cards section {
+    background: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e8ecf1;
+    display: flex;
+    flex-direction: column;
+}
+
+#cards section:hover {
+    box-shadow: 0 12px 30px rgba(27, 26, 26, 0.15);
+}
+
+#cards section h2 {
+    color: #040404;
+    border-bottom: 3px solid #c0392b;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+}
+
+.card-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.card-image {
+    object-fit: cover;
+    border: 3px solid #ecf0f1;
+    flex-shrink: 0;
+}
+
+.card-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-info p {
+    color: #444;
+    line-height: 1.5;
+    word-break: break-word;
+    margin: 2px 0;
+}
+
+.card-info .tagline {
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.card-info a {
+    color: #2c3e50;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.card-info a:hover {
+    color: #c0392b;
+    text-decoration: underline;
+}
+
 .card-info p:last-of-type {
     font-weight: 600;
     color: #f39c12;
-    font-size: 1rem;
-    margin-top: 5px;
 }
 
-/* ============================================
-   PIE DE PÁGINA
-   ============================================ */
-/* ============================================
-   FOOTER - 3 COLUMNAS CON ESPACIADO EXACTO
-   ============================================ */
-/* ============================================
-   FOOTER - MÁS DISTANCIA ENTRE ELEMENTOS
-   ============================================ */
-/* ============================================
-   FOOTER - DOS COLUMNAS, ESQUINA A ESQUINA
-   ============================================ */
+#cards .list-table {
+    width: 95%;
+    max-width: 1400px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    background: white;
+}
+
+#cards .list-table thead {
+    background: #2c3e50;
+    color: white;
+}
+
+#cards .list-table thead th {
+    text-align: left;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+#cards .list-table tbody td {
+    border-bottom: 1px solid #e8ecf1;
+    color: #444;
+    vertical-align: middle;
+}
+
+#cards .list-table tbody tr.even {
+    background-color: #f8f9fa;
+}
+
+#cards .list-table tbody tr.odd {
+    background-color: #ffffff;
+}
+
+#cards .list-table tbody tr:hover {
+    background-color: #e8ecf1;
+    transition: background 0.3s ease;
+}
+
+#cards .list-table tbody td a {
+    color: #2c3e50;
+    text-decoration: none;
+    font-weight: 500;
+    word-break: break-all;
+}
+
+#cards .list-table tbody td a:hover {
+    color: #6c5ce7;
+    text-decoration: underline;
+}
+
+#cards .list-table tbody td:first-child {
+    font-weight: 600;
+    color: #1a2a3a;
+}
+
 footer {
     background: linear-gradient(135deg, #040404, #2c3e50);
     color: #ecf0f1;
-    padding: 40px 80px;
-    /* ← Padding lateral para que no toque el borde */
     margin-top: 40px;
     width: 100%;
     border-radius: 0;
@@ -408,35 +266,21 @@ footer {
 .footer-content {
     display: flex;
     justify-content: space-between;
-    /* ← Una columna a cada extremo */
     align-items: flex-start;
-    max-width: 3000px;
     margin: 0 auto;
-    gap: 100px;
-    /* ← Distancia entre columnas */
 }
 
-/* ============================================
-   COLUMNA IZQUIERDA - Contacto
-   ============================================ */
 .footer-left {
     text-align: left;
     flex: 1;
 }
 
 .footer-left p {
-    margin: 8px 0;
-    /* ← Espacio entre líneas */
-    line-height: 2;
-    font-size: 1.2rem;
     opacity: 0.9;
 }
-/* ============================================
-   COLUMNA CENTRO - Redes Sociales
-   ============================================ */
+
 .footer-center {
     display: flex;
-    gap: 25px;
     flex: 1;
     justify-content: center;
     align-items: center;
@@ -454,33 +298,154 @@ footer {
 }
 
 .footer-center img {
-    width: 70px;
-    height: 70px;
     filter: brightness(0) invert(1);
-    /* ← Hace los íconos blancos */
     transition: filter 0.3s ease;
 }
 
 .footer-center a:hover img {
     filter: brightness(0) invert(0.7);
-    /* ← Gris claro al pasar el mouse */
 }
-/* ============================================
-   COLUMNA DERECHA - Proyecto
-   ============================================ */
+
 .footer-right {
     text-align: right;
     flex: 1;
 }
 
 .footer-right p {
-    margin: 8px 0;
-    line-height: 2;
-    font-size: 1.2rem;
     opacity: 0.9;
 }
 
 .footer-right #lastModified {
     color: #f1c40f;
     font-weight: 500;
+}
+
+/* ============================================
+   ESCRITORIO (pantallas >= 769px)
+   ============================================ */
+@media (min-width: 769px) {
+    header {
+        padding: 60px 40px;
+        flex-wrap: nowrap;
+        gap: 10px;
+    }
+
+    .header-content {
+        gap: 10px;
+    }
+
+    .header-logo {
+        width: 80px;
+        height: 80px;
+    }
+
+    .header-text h1 {
+        font-size: 2rem;
+        letter-spacing: 2px;
+        margin-bottom: 2px;
+    }
+
+    .header-text p {
+        font-size: 0.9rem;
+        margin: 2px 0;
+    }
+
+    header nav a {
+        font-size: 2rem;
+        padding: 6px 14px;
+        border-radius: 25px;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .directory-header h2 {
+        font-size: 2.5rem;
+    }
+
+    .view-controls {
+        gap: 20px;
+    }
+
+    .view-controls button {
+        padding: 14px 40px;
+        border-radius: 30px;
+        font-size: 1.2rem;
+    }
+
+    #cards {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+    }
+
+    #cards section {
+        border-radius: 16px;
+        padding: 40px 20px;
+    }
+
+    #cards section h2 {
+        font-size: 1.4rem;
+        margin-bottom: 15px;
+        padding-bottom: 10px;
+    }
+
+    .card-image {
+        width: 120px;
+        height: 120px;
+        min-width: 120px;
+        border-radius: 12px;
+    }
+
+    .card-info p {
+        font-size: 1.2rem;
+    }
+
+    .card-info p:last-of-type {
+        font-size: 1rem;
+        margin-top: 5px;
+    }
+
+    #cards .list-table {
+        font-size: 2rem;
+    }
+
+    #cards .list-table thead th {
+        padding: 20px 200px;
+        font-size: 3rem;
+    }
+
+    #cards .list-table tbody td {
+        padding: 35px 20px;
+        font-size: 1.3rem;
+    }
+
+    footer {
+        padding: 40px 80px;
+    }
+
+    .footer-content {
+        gap: 100px;
+    }
+
+    .footer-left p {
+        margin: 8px 0;
+        line-height: 2;
+        font-size: 1.2rem;
+    }
+
+    .footer-center {
+        gap: 25px;
+    }
+
+    .footer-center img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .footer-right p {
+        margin: 8px 0;
+        line-height: 2;
+        font-size: 1.2rem;
+    }
 }
