@@ -268,26 +268,76 @@ main {
     color: #c0392b;
     text-decoration: underline;
 }
+
 /* ============================================
-   DIRECTORY HEADER (Título + Botones) - CENTRADO
+   MODO LISTA - TABLA CON 4 COLUMNAS Y ZEBRA STRIPING
    ============================================ */
-.directory-header {
-    display: flex;
-    flex-direction: column;
-    /* ← Coloca título arriba y botones abajo */
-    align-items: flex-start;
-    /* ← Centra horizontalmente */
-    justify-content: center;
-    padding: 20px 0 30px 0;
-    gap: 15px;
+#cards .list-table {
+    width: 95%;
+    max-width: 1400px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    background: white;
+    font-size: 2rem;
 }
 
-.directory-header h2 {
-    font-size: 2.5rem;
-    /* ← Título más grande */
-    color: #1a2a3a;
-    margin: 0;
+#cards .list-table thead {
+    background: #2c3e50;
+    color: white;
+}
+
+#cards .list-table thead th {
+    padding: 20px 200px;
     text-align: left;
+    font-weight: 600;
+    font-size: 3rem;
+    letter-spacing: 3px;
+}
+
+#cards .list-table tbody td {
+    padding: 35px 20px;
+    border-bottom: 1px solid #e8ecf1;
+    font-size: 1.3rem;
+    color: #444;
+    vertical-align: middle;
+}
+
+/* Zebra striping - filas pares */
+#cards .list-table tbody tr.even {
+    background-color: #f8f9fa;
+}
+
+/* Zebra striping - filas impares */
+#cards .list-table tbody tr.odd {
+    background-color: #ffffff;
+}
+
+/* Efecto hover en filas */
+#cards .list-table tbody tr:hover {
+    background-color: #e8ecf1;
+    transition: background 0.3s ease;
+}
+
+/* Enlaces en la tabla */
+#cards .list-table tbody td a {
+    color: #2c3e50;
+    text-decoration: none;
+    font-weight: 500;
+    word-break: break-all;
+}
+
+#cards .list-table tbody td a:hover {
+    color: #6c5ce7;
+    text-decoration: underline;
+}
+
+/* Primera columna (Website) en negrita */
+#cards .list-table tbody td:first-child {
+    font-weight: 600;
+    color: #1a2a3a;
 }
 
 /* ============================================

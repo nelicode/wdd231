@@ -222,6 +222,28 @@ header nav a:hover {
     font-size: 0.85rem;
     margin-top: 3px;
 }
+/* ============================================
+   MODO LISTA - TABLA EN MÓVIL
+   ============================================ */
+#cards .list-table {
+    font-size: 0.7rem;
+    border-radius: 8px;
+}
+
+#cards .list-table thead th {
+    padding: 8px 10px;
+    font-size: 0.7rem;
+}
+
+#cards .list-table tbody td {
+    padding: 8px 10px;
+    font-size: 0.65rem;
+    word-break: break-word;
+}
+
+#cards .list-table tbody td:first-child {
+    font-weight: 600;
+}
 
 /* FOOTER COMPACTO */
 footer {
