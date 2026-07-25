@@ -1,5 +1,5 @@
 /* ============================================
-   larger.css - ESCRITORIO (y estilos base)
+   larger.css - TODOS LOS ESTILOS (base + escritorio)
    ============================================ */
 
 /* ============================================
@@ -21,6 +21,9 @@ body {
     flex-direction: column;
 }
 
+/* ============================================
+   HEADER
+   ============================================ */
 header {
     background: linear-gradient(135deg, #0d0e0f, #060606);
     color: white;
@@ -30,41 +33,54 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 60px 40px;
+    flex-wrap: nowrap;
+    gap: 10px;
 }
 
 .header-content {
     display: flex;
     align-items: center;
+    gap: 10px;
     flex-shrink: 0;
 }
 
 .header-logo {
+    width: 80px;
+    height: 80px;
     object-fit: contain;
     flex-shrink: 0;
 }
 
 .header-text h1 {
+    font-size: 2rem;
     font-weight: 700;
     margin: 0;
     white-space: nowrap;
+    letter-spacing: 2px;
+    margin-bottom: 2px;
 }
 
 .header-text p {
+    font-size: 0.9rem;
     opacity: 0.85;
-    margin: 0;
+    margin: 2px 0;
     white-space: nowrap;
 }
 
 header nav {
     display: flex;
     justify-content: flex-end;
+    gap: 10px;
     flex-shrink: 0;
 }
 
 header nav a {
     color: #ffffff;
     text-decoration: none;
-    transition: background 0.3s ease;
+    font-size: 2rem;
+    padding: 6px 14px;
+    border-radius: 25px;
     font-weight: 500;
 }
 
@@ -73,6 +89,7 @@ header nav a:hover {
 }
 
 .menu-toggle {
+    display: none;
     background: none;
     border: none;
     color: white;
@@ -81,6 +98,9 @@ header nav a:hover {
     padding: 5px 10px;
 }
 
+/* ============================================
+   DIRECTORY HEADER
+   ============================================ */
 .directory-header {
     display: flex;
     flex-direction: column;
@@ -90,6 +110,7 @@ header nav a:hover {
 }
 
 .directory-header h2 {
+    font-size: 2.5rem;
     color: #1a2a3a;
     margin: 0;
     text-align: left;
@@ -97,12 +118,17 @@ header nav a:hover {
 
 .view-controls {
     display: flex;
+    gap: 20px;
     justify-content: center;
 }
 
 .view-controls button {
+    padding: 14px 40px;
     border: 2px solid #2c3e50;
     background: white;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-weight: 700;
     cursor: pointer;
     transition: all 0.3s ease;
     color: #2c3e50;
@@ -118,6 +144,9 @@ header nav a:hover {
     color: white;
 }
 
+/* ============================================
+   MAIN
+   ============================================ */
 main {
     flex: 1;
     max-width: 95%;
@@ -128,11 +157,15 @@ main {
 
 #cards {
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
     padding: 10px 0;
 }
 
 #cards section {
     background: #ffffff;
+    border-radius: 16px;
+    padding: 40px 20px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     border: 1px solid #e8ecf1;
     display: flex;
@@ -144,8 +177,11 @@ main {
 }
 
 #cards section h2 {
+    font-size: 1.4rem;
     color: #040404;
+    margin-bottom: 15px;
     border-bottom: 3px solid #c0392b;
+    padding-bottom: 10px;
     font-weight: 700;
     text-align: center;
     width: 100%;
@@ -153,12 +189,17 @@ main {
 
 .card-content {
     display: flex;
+    gap: 20px;
     align-items: center;
     width: 100%;
 }
 
 .card-image {
+    width: 120px;
+    height: 120px;
+    min-width: 120px;
     object-fit: cover;
+    border-radius: 12px;
     border: 3px solid #ecf0f1;
     flex-shrink: 0;
 }
@@ -167,9 +208,11 @@ main {
     flex: 1;
     display: flex;
     flex-direction: column;
+    gap: 4px;
 }
 
 .card-info p {
+    font-size: 1.2rem;
     color: #444;
     line-height: 1.5;
     word-break: break-word;
@@ -179,6 +222,7 @@ main {
 .card-info .tagline {
     font-weight: 600;
     color: #2c3e50;
+    font-size: 0.9rem;
 }
 
 .card-info a {
@@ -195,8 +239,13 @@ main {
 .card-info p:last-of-type {
     font-weight: 600;
     color: #f39c12;
+    font-size: 1rem;
+    margin-top: 5px;
 }
 
+/* ============================================
+   MODO LISTA - TABLA
+   ============================================ */
 #cards .list-table {
     width: 95%;
     max-width: 1400px;
@@ -206,6 +255,7 @@ main {
     overflow: hidden;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     background: white;
+    font-size: 2rem;
 }
 
 #cards .list-table thead {
@@ -214,13 +264,17 @@ main {
 }
 
 #cards .list-table thead th {
+    padding: 20px 200px;
     text-align: left;
     font-weight: 600;
+    font-size: 3rem;
     letter-spacing: 3px;
 }
 
 #cards .list-table tbody td {
+    padding: 35px 20px;
     border-bottom: 1px solid #e8ecf1;
+    font-size: 1.3rem;
     color: #444;
     vertical-align: middle;
 }
@@ -255,9 +309,13 @@ main {
     color: #1a2a3a;
 }
 
+/* ============================================
+   FOOTER
+   ============================================ */
 footer {
     background: linear-gradient(135deg, #040404, #2c3e50);
     color: #ecf0f1;
+    padding: 40px 80px;
     margin-top: 40px;
     width: 100%;
     border-radius: 0;
@@ -267,7 +325,9 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    max-width: 3000px;
     margin: 0 auto;
+    gap: 100px;
 }
 
 .footer-left {
@@ -276,11 +336,15 @@ footer {
 }
 
 .footer-left p {
+    margin: 8px 0;
+    line-height: 2;
+    font-size: 1.2rem;
     opacity: 0.9;
 }
 
 .footer-center {
     display: flex;
+    gap: 25px;
     flex: 1;
     justify-content: center;
     align-items: center;
@@ -298,6 +362,8 @@ footer {
 }
 
 .footer-center img {
+    width: 70px;
+    height: 70px;
     filter: brightness(0) invert(1);
     transition: filter 0.3s ease;
 }
@@ -312,136 +378,13 @@ footer {
 }
 
 .footer-right p {
+    margin: 8px 0;
+    line-height: 2;
+    font-size: 1.2rem;
     opacity: 0.9;
 }
 
 .footer-right #lastModified {
     color: #f1c40f;
     font-weight: 500;
-}
-
-/* ============================================
-   ESCRITORIO (pantallas >= 769px)
-   ============================================ */
-@media (min-width: 769px) {
-    header {
-        padding: 60px 40px;
-        flex-wrap: nowrap;
-        gap: 10px;
-    }
-
-    .header-logo {
-        width: 80px;
-        height: 80px;
-    }
-
-    .header-text h1 {
-        font-size: 2rem;
-        letter-spacing: 2px;
-        margin-bottom: 2px;
-    }
-
-    .header-text p {
-        font-size: 0.9rem;
-        margin: 2px 0;
-    }
-
-    header nav a {
-        font-size: 2rem;
-        padding: 6px 14px;
-        border-radius: 25px;
-    }
-
-    .menu-toggle {
-        display: none;
-    }
-
-    .directory-header h2 {
-        font-size: 2.5rem;
-    }
-
-    .view-controls {
-        gap: 20px;
-    }
-
-    .view-controls button {
-        padding: 14px 40px;
-        border-radius: 30px;
-        font-size: 1.2rem;
-    }
-
-    #cards {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 25px;
-    }
-
-    #cards section {
-        border-radius: 16px;
-        padding: 40px 20px;
-    }
-
-    #cards section h2 {
-        font-size: 1.4rem;
-        margin-bottom: 15px;
-        padding-bottom: 10px;
-    }
-
-    .card-image {
-        width: 120px;
-        height: 120px;
-        min-width: 120px;
-        border-radius: 12px;
-    }
-
-    .card-info p {
-        font-size: 1.2rem;
-    }
-
-    .card-info p:last-of-type {
-        font-size: 1rem;
-        margin-top: 5px;
-    }
-
-    #cards .list-table {
-        font-size: 2rem;
-    }
-
-    #cards .list-table thead th {
-        padding: 20px 200px;
-        font-size: 3rem;
-    }
-
-    #cards .list-table tbody td {
-        padding: 35px 20px;
-        font-size: 1.3rem;
-    }
-
-    footer {
-        padding: 40px 80px;
-    }
-
-    .footer-content {
-        gap: 100px;
-    }
-
-    .footer-left p {
-        margin: 8px 0;
-        line-height: 2;
-        font-size: 1.2rem;
-    }
-
-    .footer-center {
-        gap: 25px;
-    }
-
-    .footer-center img {
-        width: 70px;
-        height: 70px;
-    }
-
-    .footer-right p {
-        margin: 8px 0;
-        line-height: 2;
-        font-size: 1.2rem;
-    }
 }

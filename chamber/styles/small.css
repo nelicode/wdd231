@@ -1,5 +1,5 @@
 /* ============================================
-   small.css - MÓVIL
+   small.css - SOLO MÓVIL (cambios en @media)
    ============================================ */
 
 @media (max-width: 768px) {
@@ -26,6 +26,7 @@
 
     .header-text p {
         font-size: 0.6rem;
+        margin: 0;
     }
 
     .menu-toggle {
@@ -90,6 +91,10 @@
         padding-bottom: 8px;
     }
 
+    .card-content {
+        gap: 12px;
+    }
+
     .card-image {
         width: 80px;
         height: 80px;
@@ -101,6 +106,10 @@
     .card-info p {
         font-size: 0.8rem;
         line-height: 1.4;
+    }
+
+    .card-info .tagline {
+        font-size: 0.85rem;
     }
 
     .card-info p:last-of-type {
