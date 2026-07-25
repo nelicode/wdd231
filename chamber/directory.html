@@ -8,22 +8,19 @@
     <title>Chamber of Commerce Arequipa - Directory</title>
 
     <meta name="description"
-        content="Discover the best businesses in Arequipa. Chamber of Commerce member directory with contact information and services.">
+        content="Discover the best local businesses, services, and contact information in Arequipa. Chamber of Commerce member directory.">
 
     <meta name="author" content="Nelida Colque">
 
     <link rel="icon" href="images/favicon.ico" type="image/png">
 
-    <!-- ✅ OPEN GRAPH (para redes sociales) -->
     <meta property="og:title" content="Arequipa Chamber of Commerce - Business Directory">
-
     <meta property="og:description"
-        content="Discover the best businesses in Arequipa. Chamber of Commerce member directory with contact information and services.">
-    <meta property="og:image" content="https://tu-sitio.com/images/logo.jpg">
-    <meta property="og:url" content="https://tu-sitio.com/chamber/directory.html">
+        content="Discover the best local businesses, services, and contact information in Arequipa. Chamber of Commerce member directory.">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630/2c3e50/ffffff?text=Arequipa+Chamber">
+    <meta property="og:url" content="https://nelicode.github.io/wdd231/chamber/directory.html">
     <meta property="og:type" content="website">
 
-    <!-- Enlazar el CSS -->
     <link rel="stylesheet" href="styles/larger.css" media="screen and (min-width: 769px)">
     <link rel="stylesheet" href="styles/small.css" media="screen and (max-width: 768px)">
 </head>
@@ -31,9 +28,7 @@
 <body>
     <header>
         <div class="header-content">
-            <!-- FAVICON (IZQUIERDA) -->
             <img src="images/logo.jpg" alt="Logo of Arequipa Chamber of Commerce" class="header-logo">
-
             <div class="header-text">
                 <p class="site-title">Arequipa Chamber of Commerce</p>
             </div>
@@ -49,21 +44,21 @@
         </nav>
     </header>
 
-    <section class="directory-header">
-        <h2>Directory</h2>
-        <div class="view-controls">
-            <button id="gridView" class="active"> Grid</button>
-            <button id="listView"> List</button>
-        </div>
-
-    </section>
     <main>
+
+        <section class="directory-header">
+            <h2>Directory</h2>
+            <div class="view-controls">
+                <button id="gridView" class="active"> Grid</button>
+                <button id="listView"> List</button>
+            </div>
+        </section>
+
         <div id="cards"></div>
     </main>
 
     <footer>
         <div class="footer-content">
-            <!-- IZQUIERDA -->
             <div class="footer-left">
                 <p>&copy; 2025 Arequipa Chamber of Commerce</p>
                 <p>Mariscall Castilla ave.san carlos, 888</p>
@@ -73,18 +68,19 @@
 
             <div class="footer-center">
                 <a href="https://www.youtube.com/" target="_blank" aria-label="YouTube">
-                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/youtube.svg" alt="YouTube" width="30">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/youtube.svg" alt="YouTube Channel"
+                        width="30">
                 </a>
                 <a href="https://twitter.com/" target="_blank" aria-label="Twitter">
-                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/twitter.svg" alt="Twitter" width="30">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/twitter.svg" alt="Twitter Profile"
+                        width="30">
                 </a>
                 <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn">
-                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="LinkedIn"
-                        width="30">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg"
+                        alt="LinkedIn Company Page" width="30">
                 </a>
             </div>
 
-            <!-- DERECHA -->
             <div class="footer-right">
                 <p>WDD231 Class Project</p>
                 <p>Nelida Colque</p>
@@ -94,7 +90,6 @@
         </div>
     </footer>
 
-    <!-- Enlazar el JavaScript -->
     <script src="scripts/script.js"></script>
     <script>
         document.getElementById('lastModified').textContent = document.lastModified;
