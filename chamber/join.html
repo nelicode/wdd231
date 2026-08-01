@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Join | Arequipa Chamber of Commerce</title>
+    <meta name="description" content="Apply for membership to the Arequipa Chamber of Commerce." />
+    <meta name="author" content="Your Name" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+    <link rel="stylesheet" href="styles/join.css" />
+    <script src="scripts/join.js" defer></script>
+</head>
+
+<body>
+    <!-- ===== HEADER - IDÉNTICO A INDEX.HTML ===== -->
+    <header>
+        <div class="logo">
+            <img src="images/favicon.ico" alt="Chamber Logo" />
+            <span>Arequipa Chamber of Commerce</span>
+        </div>
+        <button class="menu-toggle" id="menuToggle" aria-label="Menu">☰</button>
+        <nav>
+            <ul class="navigation" id="mainNav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html" class="active">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ===== MAIN ===== -->
+    <main>
+        <h1>Join the Chamber</h1>
+
+        <div class="join-container">
+            <!-- FORM - LEFT -->
+            <section class="form-area">
+                <h2>Membership Application</h2>
+                <form method="get" action="thankyou.html">
+                    <label>First Name *
+                        <input type="text" name="firstname" title="Enter your first name" autocomplete="given-name"
+                            required />
+                    </label>
+                    <label>Last Name *
+                        <input type="text" name="lastname" title="Enter your last name" autocomplete="family-name"
+                            required />
+                    </label>
+                    <label>Organization Title
+                        <input type="text" name="orgtitle" title="Enter your organization title"
+                            autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}" />
+                    </label>
+                    <label>Email Address *
+                        <input type="email" name="email" title="Enter your email address" autocomplete="email"
+                            placeholder="example@email.com" required />
+                    </label>
+                    <label>Mobile Phone *
+                        <input type="tel" name="phone" title="Enter your mobile phone number" autocomplete="tel"
+                            required />
+                    </label>
+                    <label>Business / Organization Name *
+                        <input type="text" name="business" title="Enter business name" autocomplete="organization"
+                            required />
+                    </label>
+                    <label>Membership Level
+                        <select name="membership" title="Select membership level" required>
+                            <option value="">Select One</option>
+                            <option value="basic">Basic - Free</option>
+                            <option value="standard">Standard - $100/year</option>
+                            <option value="premium">Premium - $250/year</option>
+                            <option value="enterprise">Enterprise - $500/year</option>
+                        </select>
+                    </label>
+                    <label>Business Description
+                        <textarea name="description" title="Describe your business" rows="5"></textarea>
+                    </label>
+                    <input type="hidden" name="timestamp" id="timestamp" />
+                    <button type="submit" class="submitBtn">Apply for Membership</button>
+                </form>
+            </section>
+
+            <!-- CARDS - RIGHT -->
+            <section class="membership-cards">
+                <h2>Membership Levels</h2>
+                <div class="membership-card">
+                    <h3>⭐ Basic Membership</h3>
+                    <p>For individuals and small businesses.</p>
+                    <p class="price"><strong>Free</strong></p>
+                    <button class="modal-btn" data-modal="basicModal">More Info</button>
+                </div>
+                <div class="membership-card">
+                    <h3>🌟 Standard Membership</h3>
+                    <p>For growing businesses.</p>
+                    <p class="price"><strong>$100/year</strong></p>
+                    <button class="modal-btn" data-modal="standardModal">More Info</button>
+                </div>
+                <div class="membership-card">
+                    <h3>💎 Premium Membership</h3>
+                    <p>For established companies.</p>
+                    <p class="price"><strong>$250/year</strong></p>
+                    <button class="modal-btn" data-modal="premiumModal">More Info</button>
+                </div>
+                <div class="membership-card">
+                    <h3>👑 Enterprise Membership</h3>
+                    <p>For large corporations.</p>
+                    <p class="price"><strong>$500/year</strong></p>
+                    <button class="modal-btn" data-modal="enterpriseModal">More Info</button>
+                </div>
+            </section>
+        </div>
+
+        <!-- MODALS -->
+        <dialog id="basicModal">
+            <button class="close-modal">❌</button>
+            <h2>⭐ Basic Membership Benefits</h2>
+            <p><strong>Cost:</strong> Free</p>
+            <ul>
+                <li>✔️ Basic directory listing</li>
+                <li>✔️ Access to monthly networking events</li>
+                <li>✔️ Weekly newsletter subscription</li>
+                <li>✔️ 5% discount on training workshops</li>
+            </ul>
+        </dialog>
+
+        <dialog id="standardModal">
+            <button class="close-modal">❌</button>
+            <h2>🌟 Standard Membership Benefits</h2>
+            <p><strong>Cost:</strong> $100/year</p>
+            <ul>
+                <li>✔️ All Basic benefits</li>
+                <li>✔️ Featured directory listing</li>
+                <li>✔️ 10% discount on events</li>
+                <li>✔️ Business spotlight on homepage</li>
+                <li>✔️ 2 free training tickets</li>
+            </ul>
+        </dialog>
+
+        <dialog id="premiumModal">
+            <button class="close-modal">❌</button>
+            <h2>💎 Premium Membership Benefits</h2>
+            <p><strong>Cost:</strong> $250/year</p>
+            <ul>
+                <li>✔️ All Standard benefits</li>
+                <li>✔️ Priority directory listing</li>
+                <li>✔️ 20% discount on events</li>
+                <li>✔️ Business spotlight (3 months)</li>
+                <li>✔️ Free workshops (4 per year)</li>
+                <li>✔️ Social media promotion</li>
+            </ul>
+        </dialog>
+
+        <dialog id="enterpriseModal">
+            <button class="close-modal">❌</button>
+            <h2>👑 Enterprise Membership Benefits</h2>
+            <p><strong>Cost:</strong> $500/year</p>
+            <ul>
+                <li>✔️ All Premium benefits</li>
+                <li>✔️ Premium homepage listing (6 months)</li>
+                <li>✔️ 30% discount on events</li>
+                <li>✔️ VIP networking events</li>
+                <li>✔️ 50% discount on advertising</li>
+                <li>✔️ Dedicated account manager</li>
+                <li>✔️ Free booth at trade show</li>
+            </ul>
+        </dialog>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                <p>&copy; 2025 Arequipa Chamber of Commerce</p>
+                <p>Mariscal Castilla ave. san carlos, 888</p>
+                <p>Arequipa@gmail.com</p>
+                <p>001-254-896</p>
+            </div>
+    
+            <div class="footer-center">
+                <a href="https://www.youtube.com/" target="_blank" aria-label="YouTube">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/youtube.svg" alt="YouTube Channel"
+                        width="30">
+                </a>
+                <a href="https://twitter.com/" target="_blank" aria-label="Twitter">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/twitter.svg" alt="Twitter Profile"
+                        width="30">
+                </a>
+                <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="LinkedIn Company Page"
+                        width="30">
+                </a>
+            </div>
+    
+            <div class="footer-right">
+                <p>WDD231 Class Project</p>
+                <p>Nelida Colque</p>
+                <p>2025 Arequipa Chamber Commerce</p>
+                <p>Last Modification: <span id="lastModified"></span></p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="scripts/index.js" defer></script>
+    </body>
+    
+    </html>
