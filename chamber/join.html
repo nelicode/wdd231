@@ -4,24 +4,51 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ===== TÍTULO ===== -->
     <title>Join | Arequipa Chamber of Commerce</title>
-    <meta name="description" content="Apply for membership to the Arequipa Chamber of Commerce." />
-    <meta name="author" content="Your Name" />
+
+    <!-- ===== META DESCRIPTION ===== -->
+    <meta name="description"
+        content="Join the Arequipa Chamber of Commerce and connect with local businesses. Apply for membership today." />
+    <meta name="author" content="Nelida Colque" />
+
+    <!-- ===== FAVICON ===== -->
+    <link rel="icon" href="images/favicon.ico" />
+
+    <!-- ===== OPEN GRAPH (OG) TAGS ===== -->
+    <meta property="og:title" content="Join Arequipa Chamber of Commerce" />
+    <meta property="og:description"
+        content="Apply for membership to the Arequipa Chamber of Commerce and connect with local businesses, networking opportunities, and community events." />
+    <meta property="og:image" content="https://tusitio.github.io/wdd231/chamber/images/chamberlogo.webp" />
+    <meta property="og:url" content="https://tusitio.github.io/wdd231/chamber/join.html" />
+    <meta property="og:type" content="website" />
+
+    <!-- ===== GOOGLE FONTS ===== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Open+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet" />
+
+    <!-- ===== CSS ===== -->
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/small.css" />
     <link rel="stylesheet" href="styles/larger.css" />
     <link rel="stylesheet" href="styles/join.css" />
+
     <script src="scripts/join.js" defer></script>
 </head>
 
 <body>
-    <!-- ===== HEADER - IDÉNTICO A INDEX.HTML ===== -->
     <header>
-        <div class="logo">
-            <img src="images/favicon.ico" alt="Chamber Logo" />
-            <span>Arequipa Chamber of Commerce</span>
+        <div class="header-content">
+            <img src="images/chamberlogo.webp" alt="Chamber Logo" class="header-logo" />
+            <div class="header-text">
+                <h1>Arequipa Chamber of Commerce</h1>
+                <p>🔹 Business Network</p>
+            </div>
         </div>
-        <button class="menu-toggle" id="menuToggle" aria-label="Menu">☰</button>
         <nav>
             <ul class="navigation" id="mainNav">
                 <li><a href="index.html">Home</a></li>
@@ -30,9 +57,9 @@
                 <li><a href="discover.html">Discover</a></li>
             </ul>
         </nav>
+        <button class="menu-toggle" id="menuToggle" aria-label="Menu">☰</button>
     </header>
 
-    <!-- ===== MAIN ===== -->
     <main>
         <h1>Join the Chamber</h1>
 
@@ -65,15 +92,18 @@
                         <input type="text" name="business" title="Enter business name" autocomplete="organization"
                             required />
                     </label>
+
+                    <!-- ===== SELECT CORREGIDO ===== -->
                     <label>Membership Level
                         <select name="membership" title="Select membership level" required>
                             <option value="">Select One</option>
-                            <option value="basic">Basic - Free</option>
-                            <option value="standard">Standard - $100/year</option>
-                            <option value="premium">Premium - $250/year</option>
-                            <option value="enterprise">Enterprise - $500/year</option>
+                            <option value="np">NP Membership (Non-Profit)</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
                         </select>
                     </label>
+
                     <label>Business Description
                         <textarea name="description" title="Describe your business" rows="5"></textarea>
                     </label>
@@ -176,22 +206,22 @@
                 <p>Arequipa@gmail.com</p>
                 <p>001-254-896</p>
             </div>
-    
+
             <div class="footer-center">
                 <a href="https://www.youtube.com/" target="_blank" aria-label="YouTube">
                     <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/youtube.svg" alt="YouTube Channel"
-                        width="30">
+                        width="30" />
                 </a>
                 <a href="https://twitter.com/" target="_blank" aria-label="Twitter">
                     <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/twitter.svg" alt="Twitter Profile"
-                        width="30">
+                        width="30" />
                 </a>
                 <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn">
-                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="LinkedIn Company Page"
-                        width="30">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg"
+                        alt="LinkedIn Company Page" width="30" />
                 </a>
             </div>
-    
+
             <div class="footer-right">
                 <p>WDD231 Class Project</p>
                 <p>Nelida Colque</p>
@@ -200,8 +230,6 @@
             </div>
         </div>
     </footer>
-    
-    <script src="scripts/index.js" defer></script>
-    </body>
-    
-    </html>
+</body>
+
+</html>
