@@ -43,7 +43,8 @@
 <body>
     <header>
         <div class="header-content">
-            <img src="images/favicon.ico" alt="Chamber Logo" class="header-logo" />
+            <!-- ✅ CORREGIDO: Usar logo.jpg o chamberlogo.webp, no favicon.ico -->
+            <img src="images/logo.jpg" alt="Chamber Logo" class="header-logo" />
             <div class="header-text">
                 <h1>Arequipa Chamber of Commerce</h1>
                 <p>🔹 Business Network</p>
@@ -60,90 +61,86 @@
         <button class="menu-toggle" id="menuToggle" aria-label="Menu">☰</button>
     </header>
 
+    <!-- ===== MAIN CORREGIDO: Solo uno ===== -->
     <main>
+        <!-- ===== ÚNICO H1 ===== -->
         <h1>Join the Chamber</h1>
 
-        <main>
-            <!-- ===== ÚNICO H1 ===== -->
-            <h1>Join the Chamber</h1>
+        <div class="join-container">
+            <!-- FORM - LEFT -->
+            <section class="form-area">
+                <h2>Membership Application</h2>
+                <form method="get" action="thankyou.html">
+                    <label>First Name *
+                        <input type="text" name="firstname" title="Enter your first name" autocomplete="given-name"
+                            required />
+                    </label>
+                    <label>Last Name *
+                        <input type="text" name="lastname" title="Enter your last name" autocomplete="family-name"
+                            required />
+                    </label>
+                    <label>Organization Title
+                        <input type="text" name="orgtitle" title="Enter your organization title"
+                            autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}" />
+                    </label>
+                    <label>Email Address *
+                        <input type="email" name="email" title="Enter your email address" autocomplete="email"
+                            placeholder="example@email.com" required />
+                    </label>
+                    <label>Mobile Phone *
+                        <input type="tel" name="phone" title="Enter your mobile phone number" autocomplete="tel"
+                            required />
+                    </label>
+                    <label>Business / Organization Name *
+                        <input type="text" name="business" title="Enter business name" autocomplete="organization"
+                            required />
+                    </label>
+                    <label>Membership Level
+                        <select name="membership" title="Select membership level" required>
+                            <option value="">Select One</option>
+                            <option value="np">NP Membership (Non-Profit)</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </label>
+                    <label>Business Description
+                        <textarea name="description" title="Describe your business" rows="5"></textarea>
+                    </label>
+                    <input type="hidden" name="timestamp" id="timestamp" />
+                    <button type="submit" class="submitBtn">Apply for Membership</button>
+                </form>
+            </section>
 
-            <div class="join-container">
-                <!-- FORM - LEFT -->
-                <section class="form-area">
-                    <h2>Membership Application</h2> <!-- ← Cambiado a h2 -->
-                    <form method="get" action="thankyou.html">
-                        <label>First Name *
-                            <input type="text" name="firstname" title="Enter your first name" autocomplete="given-name"
-                                required />
-                        </label>
-                        <label>Last Name *
-                            <input type="text" name="lastname" title="Enter your last name" autocomplete="family-name"
-                                required />
-                        </label>
-                        <label>Organization Title
-                            <input type="text" name="orgtitle" title="Enter your organization title"
-                                autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}" />
-                        </label>
-                        <label>Email Address *
-                            <input type="email" name="email" title="Enter your email address" autocomplete="email"
-                                placeholder="example@email.com" required />
-                        </label>
-                        <label>Mobile Phone *
-                            <input type="tel" name="phone" title="Enter your mobile phone number" autocomplete="tel"
-                                required />
-                        </label>
-                        <label>Business / Organization Name *
-                            <input type="text" name="business" title="Enter business name" autocomplete="organization"
-                                required />
-                        </label>
-                        <label>Membership Level
-                            <select name="membership" title="Select membership level" required>
-                                <option value="">Select One</option>
-                                <option value="np">NP Membership (Non-Profit)</option>
-                                <option value="bronze">Bronze Membership</option>
-                                <option value="silver">Silver Membership</option>
-                                <option value="gold">Gold Membership</option>
-                            </select>
-                        </label>
-                        <label>Business Description
-                            <textarea name="description" title="Describe your business" rows="5"></textarea>
-                        </label>
-                        <input type="hidden" name="timestamp" id="timestamp" />
-                        <button type="submit" class="submitBtn">Apply for Membership</button>
-                    </form>
-                </section>
-
-                <!-- CARDS - RIGHT -->
-                <section class="membership-cards">
-                    <h2>Membership Levels</h2> <!-- ← Cambiado a h2 -->
-                    <div class="membership-card">
-                        <h3>⭐ Basic Membership</h3>
-                        <p>For individuals and small businesses.</p>
-                        <p class="price"><strong>Free</strong></p>
-                        <button class="modal-btn" data-modal="basicModal">More Info</button>
-                    </div>
-                    <div class="membership-card">
-                        <h3>🌟 Standard Membership</h3>
-                        <p>For growing businesses.</p>
-                        <p class="price"><strong>$100/year</strong></p>
-                        <button class="modal-btn" data-modal="standardModal">More Info</button>
-                    </div>
-                    <div class="membership-card">
-                        <h3>💎 Premium Membership</h3>
-                        <p>For established companies.</p>
-                        <p class="price"><strong>$250/year</strong></p>
-                        <button class="modal-btn" data-modal="premiumModal">More Info</button>
-                    </div>
-                    <div class="membership-card">
-                        <h3>👑 Enterprise Membership</h3>
-                        <p>For large corporations.</p>
-                        <p class="price"><strong>$500/year</strong></p>
-                        <button class="modal-btn" data-modal="enterpriseModal">More Info</button>
-                    </div>
-                </section>
-            </div>
-
-        </main>
+            <!-- CARDS - RIGHT -->
+            <section class="membership-cards">
+                <h2>Membership Levels</h2>
+                <div class="membership-card">
+                    <h3>⭐ Basic Membership</h3>
+                    <p>For individuals and small businesses.</p>
+                    <p class="price"><strong>Free</strong></p>
+                    <button class="modal-btn" data-modal="basicModal">More Info</button>
+                </div>
+                <div class="membership-card">
+                    <h3>🌟 Standard Membership</h3>
+                    <p>For growing businesses.</p>
+                    <p class="price"><strong>$100/year</strong></p>
+                    <button class="modal-btn" data-modal="standardModal">More Info</button>
+                </div>
+                <div class="membership-card">
+                    <h3>💎 Premium Membership</h3>
+                    <p>For established companies.</p>
+                    <p class="price"><strong>$250/year</strong></p>
+                    <button class="modal-btn" data-modal="premiumModal">More Info</button>
+                </div>
+                <div class="membership-card">
+                    <h3>👑 Enterprise Membership</h3>
+                    <p>For large corporations.</p>
+                    <p class="price"><strong>$500/year</strong></p>
+                    <button class="modal-btn" data-modal="enterpriseModal">More Info</button>
+                </div>
+            </section>
+        </div>
 
         <!-- MODALS -->
         <dialog id="basicModal">
