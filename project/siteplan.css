@@ -1,0 +1,202 @@
+/* ---------- COLOR SCHEMA ---------- */
+/* 
+   Primary (headings, header, footer): #3E2723 (Dark Coffee)
+   Secondary (backgrounds, cards): #FFF3E0 (Cream/Milk)
+   Accent (buttons, highlights): #D84315 (Roasted Orange)
+   General text: #3E2723
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #FFF3E0;
+    color: #3E2723;
+    padding: 2rem;
+    line-height: 1.7;
+    min-height: 100vh;
+}
+
+/* ----- HEADER (Dark Coffee Card) ----- */
+header {
+    background-color: #3E2723;
+    color: #FFF3E0;
+    padding: 2rem;
+    border-radius: 16px;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    box-shadow: 0 8px 25px rgba(62, 39, 35, 0.25);
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* ----- MAIN CONTAINER (Cards layout) ----- */
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* ----- EACH SECTION IS A CARD ----- */
+section {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(62, 39, 35, 0.10);
+    border-left: 8px solid #D84315;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+section:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(62, 39, 35, 0.18);
+}
+
+/* ----- HEADINGS inside cards ----- */
+h2 {
+    font-family: 'Playfair Display', serif;
+    color: #3E2723;
+    font-size: 1.8rem;
+    border-bottom: 3px solid #D84315;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.2rem;
+    display: inline-block;
+}
+
+p,
+li {
+    font-family: 'Nunito', sans-serif;
+    color: #3E2723;
+    margin-bottom: 0.8rem;
+}
+
+ul {
+    padding-left: 1.8rem;
+}
+
+.accent-text {
+    color: #D84315;
+    font-weight: 700;
+}
+
+/* ----- COLOR SWATCHES ----- */
+.color-swatch {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    border-radius: 6px;
+    vertical-align: middle;
+    margin-right: 10px;
+    border: 2px solid #ddd;
+}
+
+.primary-swatch {
+    background-color: #3E2723;
+}
+
+.secondary-swatch {
+    background-color: #FFF3E0;
+    border: 2px solid #3E2723;
+}
+
+.accent-swatch {
+    background-color: #D84315;
+}
+
+/* ----- WIREFRAME IMAGE GRID (BLACK & WHITE) ----- */
+.wireframe-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 1.5rem;
+    justify-content: center;
+}
+
+.wireframe-grid figure {
+    flex: 1 1 280px;
+    max-width: 550px;
+    margin: 0;
+    text-align: center;
+}
+
+.wireframe-img {
+    width: 100%;
+    height: auto;
+    border: 3px solid #000000;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.10);
+    background-color: #ffffff;
+    transition: transform 0.2s ease;
+}
+
+.wireframe-img:hover {
+    transform: scale(1.01);
+}
+
+.wireframe-grid figcaption {
+    text-align: center;
+    margin-top: 0.8rem;
+    font-size: 0.95rem;
+    color: #222222;
+    font-weight: 600;
+}
+
+/* ----- RESPONSIVE (Mobile) ----- */
+@media (max-width: 600px) {
+    body {
+        padding: 1rem;
+    }
+
+    main {
+        gap: 1.5rem;
+    }
+
+    section {
+        padding: 1.2rem;
+        border-left-width: 5px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+        display: block;
+    }
+
+    .wireframe-grid figure {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+/* ----- FOOTER ----- */
+footer {
+    text-align: center;
+    margin-top: 2.5rem;
+    padding: 1.5rem;
+    color: #3E2723;
+    font-weight: 600;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(62, 39, 35, 0.08);
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}

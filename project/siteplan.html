@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Website planning document for Local Coffee Roasters Guide">
+    <meta name="author" content="Nelida Colque">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Plan | Local Coffee Roasters Guide</title>
+
+    <!-- Google Fonts (Typography) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Nunito:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="siteplan.css">
+</head>
+
+<body>
+    <header>
+        <h1>☕ Local Coffee Roasters Guide</h1>
+        <p>Website Planning Document</p>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Site Name</h2>
+            <p><strong>Local Coffee Roasters Guide</strong></p>
+            <p>This name accurately describes the site's purpose: to serve as a <strong>guide</strong> (directory) of
+                <strong>local coffee roasters and cafes</strong> in my city. It is clear, direct, and easy to remember
+                for coffee lovers looking for nearby options.
+            </p>
+            <p><em>Optional domain availability:</em> localcoffeeroastersguide.com</p>
+        </section>
+
+        <section>
+            <h2>Site Purpose</h2>
+            <p>The main purpose of this website is to <strong>connect coffee enthusiasts with independent local
+                    roasters</strong>. To achieve this, it will provide the following services and information:</p>
+            <ul>
+                <li><strong>Real-time Weather:</strong> A weather widget on the homepage to suggest whether to drink
+                    iced or hot coffee based on the current weather.</li>
+                <li><strong>Roaster Directory:</strong> A page that loads data from a <span
+                        class="accent-text">JSON</span> file, displaying ratings, addresses, and specialty drinks for
+                    each location.</li>
+                <li><strong>Events & Workshops:</strong> A page with a calendar of coffee tastings and brewing workshops
+                    (pour-over, espresso, etc.).</li>
+                <li><strong>Local Business Support:</strong> Highlight small businesses and encourage the community to
+                    buy locally sourced coffee.</li>
+            </ul>
+        </section>
+
+        <!-- ======================================== -->
+        <!-- 3. SCENARIOS (Rubric Criterion 3)        -->
+        <!-- ======================================== -->
+        <section>
+            <h2>User Scenarios</h2>
+            <p>These are typical questions that site visitors might ask:</p>
+            <ul>
+                <li><strong>Scenario 1:</strong> “It's really hot today. Which local cafe near me offers good cold brew
+                    and has a high rating?”</li>
+                <li><strong>Scenario 2:</strong> “I want to learn how to brew better coffee at home. Are there any
+                    workshops or tastings scheduled for this weekend?”</li>
+            </ul>
+        </section>
+
+        <!-- ======================================== -->
+        <!-- 4. COLOR SCHEMA (Rubric Criteria 4 & 5)  -->
+        <!-- ======================================== -->
+        <section>
+            <h2>Color Schema</h2>
+            <p>Warm, earthy colors have been selected to evoke the experience of roasted coffee. <strong>This document
+                    already uses these colors in its design</strong> (check the backgrounds, borders, and text).</p>
+            <ul>
+                <li><span class="color-swatch primary-swatch"></span> <strong>#3E2723 (Dark Coffee)</strong> — Used for
+                    <strong>titles, headings, navigation, and footers</strong>. It conveys robustness and warmth.
+                </li>
+                <li><span class="color-swatch secondary-swatch"></span> <strong>#FFF3E0 (Cream/Milk)</strong> — Used for
+                    <strong>section backgrounds and cards</strong>. It provides brightness and soft contrast.
+                </li>
+                <li><span class="color-swatch accent-swatch"></span> <strong>#D84315 (Roasted Orange)</strong> — Used
+                    for <strong>call-to-action buttons, highlighted links, and the weather icon</strong>. It adds energy
+                    and dynamism.</li>
+            </ul>
+        </section>
+
+        <!-- ======================================== -->
+        <!-- 5. TYPOGRAPHY (Rubric Criterion 6)       -->
+        <!-- ======================================== -->
+        <section>
+            <h2>Typography</h2>
+            <p>The following Google Fonts will be used to reflect the personality of artisan coffee. <strong>This
+                    document already uses both fonts</strong> (check the headings and body text).</p>
+            <ul>
+                <li><strong>Playfair Display (serif)</strong> — Used for <strong>headings (h1, h2, h3)</strong>. It is
+                    an elegant and distinctive font, ideal for conveying the tradition and specialty of coffee.</li>
+                <li><strong>Nunito (sans-serif)</strong> — Used for <strong>paragraphs, lists, and general body
+                        text</strong>. It is rounded, friendly, and highly readable, perfect for directory information
+                    and events.</li>
+            </ul>
+        </section>
+
+        <!-- ======================================== -->
+        <!-- 6. WIREFRAMES (Rubric Criterion 7)       -->
+        <!-- ======================================== -->
+        <section>
+            <h2>Wireframes</h2>
+            <p>The following wireframes are <strong>black and white sketches</strong> showing the structure of the
+                <strong>home page</strong> in both mobile and desktop views. They focus on layout and functionality, not
+                colors, images, or typography.
+            </p>
+
+            <div class="wireframe-grid">
+                <!-- MOBILE WIREFRAME IMAGE -->
+                <figure>
+                    <img src="images/mobile-wireframe.png"
+                        alt="Black and white wireframe sketch for the mobile home page showing Logo, Menu, Weather, Top 3 Roasters, Upcoming Event, Newsletter, and Footer stacked vertically."
+                        class="wireframe-img">
+                    <figcaption><strong>Figure 1:</strong> Mobile wireframe sketch (vertical layout)</figcaption>
+                </figure>
+
+                <!-- DESKTOP WIREFRAME IMAGE -->
+                <figure>
+                    <img src="images/desktop-wireframe.png"
+                        alt="Black and white wireframe sketch for the desktop home page showing Logo with navigation, Hero with Weather, Featured Image, Roasters directory grid, Events sidebar, and Footer."
+                        class="wireframe-img">
+                    <figcaption><strong>Figure 2:</strong> Desktop wireframe sketch (horizontal layout)</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Local Coffee Roasters Guide</p>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
