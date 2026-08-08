@@ -4,100 +4,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-
-
-    <title>Chamber of Commerce Arequipa - Directory v2</title>
-
-    <meta name="description"
-        content="Discover the best local businesses, services, and contact information in Arequipa. Chamber of Commerce member directory.">
-
+    <title>Directory | Arequipa Chamber of Commerce</title>
+    <meta name="description" content="Directory of members of the Arequipa Chamber of Commerce.">
     <meta name="author" content="Nelida Colque">
-
-    <link rel="icon" href="images/favicon.ico" type="image/png">
-
     <meta property="og:title" content="Arequipa Chamber of Commerce - Business Directory">
     <meta property="og:description"
-        content="Discover the best local businesses, services, and contact information in Arequipa. Chamber of Commerce member directory.">
-    <meta property="og:image" content="https://nelicode.github.io/wdd231/chamber/images/logo.jpg">
+        content="Discover the best local businesses, services, and contact information in Arequipa.">
+    <meta property="og:image" content="https://nelicode.github.io/wdd231/chamber/images/hero.jpg">
     <meta property="og:url" content="https://nelicode.github.io/wdd231/chamber/directory.html">
     <meta property="og:type" content="website">
-
-    <link rel="stylesheet" href="styles/larger.css" media="screen and (min-width: 769px)">
-    <link rel="stylesheet" href="styles/small.css" media="screen and (max-width: 768px)">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Lora:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/directory.js" defer></script>
 </head>
 
 <body>
     <header>
-        <div class="header-content">
-            <img src="images/logo.jpg" alt="Logo of Arequipa Chamber of Commerce" class="header-logo">
-            <div class="header-text">
-                <p class="site-title">Arequipa Chamber of Commerce</p> <!-- ✅ p, no h1 -->
+        <div class="header-container">
+            <!-- IZQUIERDA: Logo + Nombre + Lema -->
+            <div class="header-left">
+                <img src="images/logo.jpg" alt="Arequipa Chamber of Commerce Logo" class="header-logo">
+                <div class="header-text">
+                    <h1>Arequipa Chamber of Commerce</h1>
+                    <p>Business Network</p>
+                </div>
             </div>
+    
+            <!-- DERECHA: Navegación -->
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                </ul>
+            </nav>
+    
+            <!-- Botón hamburguesa (solo móvil) -->
+            <button id="menu-toggle" class="menu-toggle" aria-label="Menu">☰</button>
         </div>
-        <button id="menuButton" class="menu-toggle" aria-label="Menú">
-            ☰
-        </button>
-        <nav id="mainNav">
-            <a href="index.html">Home</a>
-            <a href="#">Directory</a>
-            <a href="join.html" class="active>Directory">Join</a>
-            <a href="#">Discover</a>
-        </nav>
     </header>
 
     <main>
-        <h1>Directory</h1> <!-- ✅ Este es el único h1 y está dentro de main -->
-
-        <section class="directory-header">
-            <h2>Member List</h2>
-            <div class="view-controls">
-                <button id="gridView" class="active"> Grid</button>
-                <button id="listView"> List</button>
-            </div>
-        </section>
-
-        <div id="cards"></div>
+        <h1>Member Directory</h1>
+        <div class="view-buttons">
+            <button id="grid">Grid View</button>
+            <button id="list">List View</button>
+        </div>
+        <div id="members" class="grid"></div>
     </main>
 
     <footer>
-        <div class="footer-content">
-            <div class="footer-left">
-                <p>&copy; 2025 Arequipa Chamber of Commerce</p>
-                <p>Mariscall Castilla ave.san carlos, 888</p>
-                <p>Arequipa@gmail.com</p>
-                <p>001-254-896</p>
-            </div>
-
-            <div class="footer-center">
-                <a href="https://www.youtube.com/" target="_blank" aria-label="YouTube">
-                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/youtube.svg" alt="YouTube Channel"
-                        width="30">
-                </a>
-                <a href="https://twitter.com/" target="_blank" aria-label="Twitter">
-                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/twitter.svg" alt="Twitter Profile"
-                        width="30">
-                </a>
-                <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn">
-                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg"
-                        alt="LinkedIn Company Page" width="30">
-                </a>
-            </div>
-
-            <div class="footer-right">
-                <p>WDD231 Class Project</p>
-                <p>Nelida Colque salas</p>
-                <p>20xx Arequipa Chamber Commerce</p>
-                <p>Last Modification: <span id="lastModified"></span></p>
-            </div>
+        <div class="contact-info">
+            <h2>Arequipa Chamber of Commerce</h2>
+            <p>Mariscal Castilla ave. san carlos, 888</p>
+            <p>Arequipa, Peru</p>
+            <p>info@arequipachamber.org</p>
+            <p>+51 987 654 321</p>
+        </div>
+        <div class="footer-center">
+            <a href="https://www.youtube.com/" target="_blank" aria-label="YouTube">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/youtube.svg" alt="YouTube" width="30">
+            </a>
+            <a href="https://twitter.com/" target="_blank" aria-label="Twitter">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/twitter.svg" alt="Twitter" width="30">
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="LinkedIn" width="30">
+            </a>
+        </div>
+        <div class="development-info">
+            <p>&copy; <span id="year"></span> Arequipa Chamber of Commerce</p>
+            <p>Nelida Colque | WDD 231</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
         </div>
     </footer>
-    <script src="scripts/script.js"></script>
-
 </body>
 
 </html>

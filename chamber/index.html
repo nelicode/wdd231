@@ -4,131 +4,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Home | Arequipa Chamber of Commerce</title>
-
     <meta name="description"
         content="Welcome to the Arequipa Chamber of Commerce, connecting businesses, promoting growth, and supporting entrepreneurs in Arequipa.">
     <meta name="author" content="Nelida Colque">
-
     <meta property="og:title" content="Home | Arequipa Chamber of Commerce">
     <meta property="og:description" content="Connecting businesses and promoting commerce in Arequipa.">
     <meta property="og:image" content="https://nelicode.github.io/wdd231/chamber/images/hero.jpg">
     <meta property="og:url" content="https://nelicode.github.io/wdd231/chamber/index.html">
     <meta property="og:type" content="website">
-
     <link rel="icon" href="images/favicon.ico">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="styles/larger.css" media="screen and (min-width: 769px)">
-    <link rel="stylesheet" href="styles/small.css" media="screen and (max-width: 768px)">
-
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Lora:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/index.js" defer></script>
 </head>
 
 <body>
-
     <header>
-        <div class="header-content">
-            <img src="images/logo.jpg" alt="Logo of Arequipa Chamber of Commerce" class="header-logo">
-            <div class="header-text">
-                <p class="site-title">Arequipa Chamber of Commerce</p>
+        <div class="header-container">
+            <!-- IZQUIERDA: Logo + Nombre + Lema -->
+            <div class="header-left">
+                <img src="images/logo.jpg" alt="Arequipa Chamber of Commerce Logo" class="header-logo">
+                <div class="header-text">
+                    <h1>Arequipa Chamber of Commerce</h1>
+                    <p>Business Network</p>
+                </div>
             </div>
+    
+            <!-- DERECHA: Navegación -->
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                </ul>
+            </nav>
+    
+            <!-- Botón hamburguesa (solo móvil) -->
+            <button id="menu-toggle" class="menu-toggle" aria-label="Menu">☰</button>
         </div>
-        <button id="menuButton" class="menu-toggle" aria-label="Menú">
-            ☰
-        </button>
-        <nav id="mainNav">
-            <a href="index.html" class="active">Home</a>
-            <a href="directory.html">Directory</a>
-            <a href="join.html">Join</a>
-            <a href="discover.html">Discover</a>
-        </nav>
     </header>
 
     <main>
-
-        <!-- ==========================================
-        HERO - IMAGEN DE FONDO
-        ========================================== -->
         <section class="hero">
-            <img src="images/hero.jpg" alt="Arequipa Chamber of Commerce" class="hero-image">
-            <div class="hero-content">
-                <div class="hero-box">
-                    <h1>Arequipa's Premier Business Network</h1>
-                    <p>Success starts with connection.</p>
-                    <a href="join.html" class="cta-button">Join the Chamber</a>
-                </div>
+            <img src="images/hero.jpg" alt="Arequipa Chamber of Commerce">
+            <div class="hero-text">
+                <h1>Welcome to the Arequipa Chamber of Commerce</h1>
+                <a href="join.html" class="cta-button">Join the Chamber</a>
             </div>
         </section>
 
-        <!-- ==========================================
-        HOME GRID (Events, Weather, Spotlights)
-        ========================================== -->
-        <div class="home-grid">
-
-            <!-- Current Events -->
+        <section class="home-grid">
             <section class="events">
                 <h2>Current Events</h2>
                 <p>📅 Leadership Conference – August 28</p>
-                <p>📅 Small Business Success Workshop – September 20</p>
-                <p>📅 Annual Chamber Gala – November 5</p>
+                <p>Annual Chamber Gala – November 5</p>
             </section>
-
-            <!-- Weather -->
             <section class="weather">
                 <h2>Weather in Arequipa</h2>
                 <div id="current-weather"></div>
                 <div id="forecast"></div>
             </section>
-
-            <!-- Business Spotlights -->
             <section class="spotlights">
                 <h2>Business Spotlights</h2>
-                <div id="spotlight-container"></div> <!-- ← ESTO FALTA -->
+                <div id="spotlight-container"></div>
             </section>
-
-        </div>
-
+        </section>
     </main>
 
     <footer>
-        <div class="footer-content">
-            <div class="footer-left">
-                <p>&copy; 2025 Arequipa Chamber of Commerce</p>
-                <p>Mariscal Castilla ave. san carlos, 888</p>
-                <p>Arequipa@gmail.com</p>
-                <p>001-254-896</p>
-            </div>
-
-            <div class="footer-center">
-                <a href="https://www.youtube.com/" target="_blank" aria-label="YouTube">
-                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/youtube.svg" alt="YouTube Channel"
-                        width="30">
-                </a>
-                <a href="https://twitter.com/" target="_blank" aria-label="Twitter">
-                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/twitter.svg" alt="Twitter Profile"
-                        width="30">
-                </a>
-                <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn">
-                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg"
-                        alt="LinkedIn Company Page" width="30">
-                </a>
-            </div>
-
-            <div class="footer-right">
-                <p>WDD231 Class Project</p>
-                <p>Nelida Colque</p>
-                <p>2025 Arequipa Chamber Commerce</p>
-                <p>Last Modification: <span id="lastModified"></span></p>
-            </div>
+        <div class="contact-info">
+            <h2>Arequipa Chamber of Commerce</h2>
+            <p>Mariscal Castilla ave. san carlos, 888</p>
+            <p>Arequipa, Peru</p>
+            <p>info@arequipachamber.org</p>
+            <p>+51 987 654 321</p>
+        </div>
+        <div class="footer-center">
+            <a href="https://www.youtube.com/" target="_blank" aria-label="YouTube">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/youtube.svg" alt="YouTube" width="30">
+            </a>
+            <a href="https://twitter.com/" target="_blank" aria-label="Twitter">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/twitter.svg" alt="Twitter" width="30">
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="LinkedIn" width="30">
+            </a>
+        </div>
+        <div class="development-info">
+            <p>&copy; <span id="year"></span> Arequipa Chamber of Commerce</p>
+            <p>Nelida Colque | WDD 231</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
         </div>
     </footer>
-
-    <script src="scripts/index.js" defer></script>
 </body>
 
 </html>
