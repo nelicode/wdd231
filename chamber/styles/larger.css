@@ -65,16 +65,16 @@
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     }
 
-#members.list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
-}
+    #members.list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
 
-#members.list .member-card {
-    margin-bottom: 0;
-    /* remove bottom margin because gap handles spacing */
-}
+    #members.list .member-card {
+        margin-bottom: 0;
+        /* remove bottom margin because gap handles spacing */
+    }
 
     /* ----- DISCOVER EN TABLET (2 columnas, imagen izquierda) ----- */
     .discover-grid {
@@ -229,6 +229,7 @@
         padding: 2.5rem 4rem;
     }
 }
+
 /* ===== DISCOVER GRID - TABLET (641px - 1024px) ===== */
 @media screen and (min-width: 641px) and (max-width: 1024px) {
     .discover-grid {
@@ -251,6 +252,7 @@
         padding: 1.2rem;
     }
 }
+
 /* ============================================
    DISCOVER EN DESKTOP (1025px+) - 3 COLUMNAS
    ============================================ */
@@ -301,6 +303,7 @@
         box-shadow: 0 8px 25px rgba(230, 126, 34, 0.3);
     }
 }
+
 /* ===== HEADER EN TABLET/DESKTOP ===== */
 @media screen and (min-width: 641px) {
     .header-container {
@@ -366,6 +369,7 @@
         font-size: 1.1rem;
     }
 }
+
 @media screen and (min-width: 641px) {
     .header-nav ul li a {
         padding: 0.6rem 1.2rem;
