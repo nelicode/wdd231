@@ -65,6 +65,7 @@
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     }
 
+    /* ===== LIST VIEW EN 2 COLUMNAS (como pediste) ===== */
     #members.list {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -73,13 +74,17 @@
 
     #members.list .member-card {
         margin-bottom: 0;
-        /* remove bottom margin because gap handles spacing */
     }
 
     /* ----- DISCOVER EN TABLET (2 columnas, imagen izquierda) ----- */
     .discover-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
+        grid-template-areas:
+            "card1 card2"
+            "card3 card4"
+            "card5 card6"
+            "card7 card8";
     }
 
     .discover-card {
@@ -158,6 +163,45 @@
         margin: 0;
         text-align: right;
     }
+
+    /* ===== HEADER EN TABLET ===== */
+    .header-container {
+        flex-wrap: nowrap;
+    }
+
+    .header-nav {
+        display: flex !important;
+        align-items: center;
+    }
+
+    .header-nav ul {
+        flex-direction: row;
+        gap: 0.5rem;
+    }
+
+    .header-nav ul li a {
+        padding: 0.6rem 1.2rem;
+        font-size: 1rem;
+        border-radius: 0;
+        /* ← Cuadrado */
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .header-text h1 {
+        font-size: 1.6rem;
+    }
+
+    .header-text p {
+        font-size: 0.9rem;
+    }
+
+    .header-logo {
+        width: 60px;
+        height: 60px;
+    }
 }
 
 /* ===== DESKTOP (1025px+) ===== */
@@ -183,10 +227,14 @@
         gap: 2rem;
     }
 
-    /* ----- DISCOVER EN DESKTOP (3 columnas, imagen arriba) ----- */
+    /* ----- DISCOVER EN DESKTOP (3 columnas) ----- */
     .discover-grid {
         grid-template-columns: repeat(3, 1fr);
         gap: 2.5rem;
+        grid-template-areas:
+            "card1 card2 card3"
+            "card4 card5 card6"
+            "card7 card8 .";
     }
 
     .discover-card {
@@ -214,7 +262,7 @@
         transition: transform 0.4s ease, filter 0.4s ease, box-shadow 0.4s ease;
     }
 
-    /* ----- HOVER EFECTO SOLO EN DESKTOP ----- */
+    /* Hover efecto solo en imágenes en desktop */
     .discover-card figure img:hover {
         transform: scale(1.05);
         filter: brightness(0.9) saturate(1.2);
@@ -228,125 +276,8 @@
     footer {
         padding: 2.5rem 4rem;
     }
-}
 
-/* ===== DISCOVER GRID - TABLET (641px - 1024px) ===== */
-@media screen and (min-width: 641px) and (max-width: 1024px) {
-    .discover-grid {
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-            "card1 card2"
-            "card3 card4"
-            "card5 card6"
-            "card7 card8";
-        gap: 2rem;
-    }
-
-    .discover-card {
-        grid-template-areas:
-            "title"
-            "image"
-            "address"
-            "description"
-            "button";
-        padding: 1.2rem;
-    }
-}
-
-/* ============================================
-   DISCOVER EN DESKTOP (1025px+) - 3 COLUMNAS
-   ============================================ */
-
-@media screen and (min-width: 1025px) {
-    .discover-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 2.5rem;
-        grid-template-areas:
-            "card1 card2 card3"
-            "card4 card5 card6"
-            "card7 card8 .";
-    }
-
-    .discover-card {
-        display: grid;
-        grid-template-areas:
-            "title"
-            "image"
-            "address"
-            "description"
-            "button";
-        padding: 1.2rem;
-        background: var(--light);
-        border-radius: 12px;
-        box-shadow: 0 4px 12px var(--shadow);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .discover-card:hover {
-        transform: translateY(-6px);
-        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
-    }
-
-    .discover-card figure img {
-        height: 200px;
-        width: 100%;
-        object-fit: cover;
-        border-radius: 8px;
-        transition: transform 0.4s ease, filter 0.4s ease, box-shadow 0.4s ease;
-    }
-
-    /* Hover efecto solo en imágenes en desktop */
-    .discover-card figure img:hover {
-        transform: scale(1.05);
-        filter: brightness(0.9) saturate(1.2);
-        box-shadow: 0 8px 25px rgba(230, 126, 34, 0.3);
-    }
-}
-
-/* ===== HEADER EN TABLET/DESKTOP ===== */
-@media screen and (min-width: 641px) {
-    .header-container {
-        flex-wrap: nowrap;
-    }
-
-    .header-nav {
-        display: flex !important;
-        /* Forzar display en pantallas grandes */
-        align-items: center;
-    }
-
-    .header-nav ul {
-        flex-direction: row;
-        gap: 0.5rem;
-    }
-
-    .header-nav ul li a {
-        padding: 0.6rem 1.2rem;
-        font-size: 1rem;
-        border-radius: 30px;
-    }
-
-    .menu-toggle {
-        display: none;
-        /* Ocultar botón hamburguesa */
-    }
-
-    .header-text h1 {
-        font-size: 1.6rem;
-    }
-
-    .header-text p {
-        font-size: 0.9rem;
-    }
-
-    .header-logo {
-        width: 60px;
-        height: 60px;
-    }
-}
-
-@media screen and (min-width: 1025px) {
+    /* ===== HEADER EN DESKTOP ===== */
     .header-text h1 {
         font-size: 2rem;
     }
@@ -367,14 +298,7 @@
     .header-nav ul li a {
         padding: 0.8rem 1.8rem;
         font-size: 1.1rem;
-    }
-}
-
-@media screen and (min-width: 641px) {
-    .header-nav ul li a {
-        padding: 0.6rem 1.2rem;
-        font-size: 1rem;
         border-radius: 0;
-        /* ← Cambia a 0 (cuadrado) */
+        /* ← Cuadrado */
     }
 }

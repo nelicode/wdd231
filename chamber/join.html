@@ -27,7 +27,7 @@
 <body>
     <header>
         <div class="header-container">
-            <!-- IZQUIERDA: Logo + Nombre + Lema -->
+            <!-- LOGO + TEXTO A LA IZQUIERDA -->
             <div class="header-left">
                 <img src="images/logo.jpg" alt="Arequipa Chamber of Commerce Logo" class="header-logo">
                 <div class="header-text">
@@ -35,8 +35,8 @@
                     <p>Business Network</p>
                 </div>
             </div>
-    
-            <!-- DERECHA: Navegación -->
+
+            <!-- NAVEGACIÓN A LA DERECHA -->
             <nav class="header-nav">
                 <ul>
                     <li><a href="index.html" class="active">Home</a></li>
@@ -45,8 +45,8 @@
                     <li><a href="join.html">Join</a></li>
                 </ul>
             </nav>
-    
-            <!-- Botón hamburguesa (solo móvil) -->
+
+            <!-- BOTÓN HAMBURGUESA (solo móvil) -->
             <button id="menu-toggle" class="menu-toggle" aria-label="Menu">☰</button>
         </div>
     </header>
@@ -69,10 +69,10 @@
                         autocomplete="organization" required></label>
                 <label>Membership Level<select name="membership" required>
                         <option value="">Choose One</option>
-                        <option value="np">NP Membership</option>
-                        <option value="bronze">Bronze Membership</option>
-                        <option value="silver">Silver Membership</option>
-                        <option value="gold">Gold Membership</option>
+                        <option value="np">⭐ Basic Membership</option>
+                        <option value="bronze">🌟 Standard Membership</option>
+                        <option value="silver">💎 Premium Membership</option>
+                        <option value="gold">👑 Enterprise Membership</option>
                     </select></label>
                 <label>Business Description<textarea name="description" title="Business Description"
                         rows="5"></textarea></label>
@@ -82,70 +82,71 @@
             <div class="membership-cards">
                 <section class="membership-cards">
                     <h2>Membership Levels</h2>
-                <section class="membership-card">
-                    <h2>⭐ Basic Membership</h2>
-                    <p>For individuals and small businesses</p>
-                    <p class="price"><strong>Free</strong></p>
-                    <button type="button" data-dialog="npDialog">Learn More</button>
-                </section>
-                <section class="membership-card">
-                    <h2>🌟 Standard Membership</h2>
-                    <p>For growing businesses.</p>
-                    <p class="price"><strong>$100/year</strong></p>
-                    <button type="button" data-dialog="bronzeDialog">Learn More</button>
-                </section>
-                <section class="membership-card">
-                    <h2>💎 Premium Membership</h2>
-                    <p>For established companies.</p>
-                    <p class="price"><strong>$250/year</strong></p>
-                    <button type="button" data-dialog="silverDialog">Learn More</button>
-                </section>
-                <section class="membership-card">
-                    <h2>👑 Enterprise Membership</h2>
-                    <p>For large corporations.</p>
-                    <p class="price"><strong>$500/year</strong></p>
-                    <button type="button" data-dialog="goldDialog">Learn More</button>
-                </section>
+                    <section class="membership-card">
+                        <h2>⭐ Basic Membership</h2>
+                        <p>For individuals and small businesses</p>
+                        <p class="price"><strong>Free</strong></p>
+                        <button type="button" data-dialog="npDialog">Learn More</button>
+                    </section>
+                    <section class="membership-card">
+                        <h2>🌟 Standard Membership</h2>
+                        <p>For growing businesses.</p>
+                        <p class="price"><strong>$100/year</strong></p>
+                        <button type="button" data-dialog="bronzeDialog">Learn More</button>
+                    </section>
+                    <section class="membership-card">
+                        <h2>💎 Premium Membership</h2>
+                        <p>For established companies.</p>
+                        <p class="price"><strong>$250/year</strong></p>
+                        <button type="button" data-dialog="silverDialog">Learn More</button>
+                    </section>
+                    <section class="membership-card">
+                        <h2>👑 Enterprise Membership</h2>
+                        <p>For large corporations.</p>
+                        <p class="price"><strong>$500/year</strong></p>
+                        <button type="button" data-dialog="goldDialog">Learn More</button>
+                    </section>
             </div>
         </div>
         <dialog id="npDialog">
-            <h2>NP Membership</h2>
+            <h2>⭐ Basic Membership</h2>
             <ul>
-                <li>No Membership Fee</li>
-                <li>Networking Events</li>
-                <li>Community Programs</li>
-                <li>Business Directory Listing</li>
+                <li>🌟 Free access to all virtual events</li>
+                <li>📋 Business profile in the public directory</li>
+                <li>📩 Weekly newsletter with market trends</li>
+                <li>🤝 Invitation to 2 networking events per year</li>
             </ul>
             <button class="closeDialog">Close</button>
         </dialog>
         <dialog id="bronzeDialog">
-            <h2>Bronze Membership</h2>
+            <h2>🌟 Standard Membership</h2>
             <ul>
-                <li>Everything in NP</li>
-                <li>Monthly Newsletter</li>
-                <li>Business Workshops</li>
-                <li>Event Invitations</li>
+                <li>🔹 All NP benefits</li>
+                <li>📸 Featured profile with logo in the directory</li>
+                <li>📅 Access to 4 free training workshops per year</li>
+                <li>🎟️ 2 free tickets to the annual chamber gala</li>
+                <li>📊 Quarterly regional economic impact report</li>
             </ul>
             <button class="closeDialog">Close</button>
         </dialog>
         <dialog id="silverDialog">
-            <h2>Silver Membership</h2>
+            <h2>💎 Premium Membership</h2>
             <ul>
-                <li>Everything in Bronze</li>
-                <li>Advertising Discounts</li>
-                <li>Training Programs</li>
-                <li>Priority Networking</li>
+                <li>✨ All Bronze benefits</li>
+                <li>🏆 Homepage spotlight for 1 month</li>
+                <li>📣 2 promotional posts on chamber social media</li>
+                <li>🎓 Unlimited access to all online courses</li>
             </ul>
             <button class="closeDialog">Close</button>
         </dialog>
         <dialog id="goldDialog">
-            <h2>Gold Membership</h2>
+            <h2>👑 Enterprise Membership</h2>
             <ul>
-                <li>Everything in Silver</li>
-                <li>Homepage Spotlight</li>
-                <li>Premium Advertising</li>
-                <li>VIP Chamber Events</li>
-                <li>Sponsorship Opportunities</li>
+                <li>👑 All Silver benefits</li>
+                <li>🎯 Premium homepage spotlight for 6 months</li>
+                <li>📺 1-minute promotional video on the chamber's YouTube channel</li>
+                <li>🎤 Speaking opportunity at the annual conference</li>
+                <li>📊 Quarterly strategic business advisory sessions</li>
             </ul>
             <button class="closeDialog">Close</button>
         </dialog>
