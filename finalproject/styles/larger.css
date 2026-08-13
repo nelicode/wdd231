@@ -1,0 +1,175 @@
+/* ============================================
+   larger.css – Tablet & Desktop (≥640px)
+   Coffee Spot – Header centrado con logo izq y nav der
+   ============================================ */
+
+/* ----- Breakpoint: Tablet (640px en adelante) ----- */
+@media screen and (min-width: 640px) {
+
+    /* Ocultar elementos móviles */
+    #hamburger-btn {
+        display: none;
+    }
+
+    .bottom-nav {
+        display: none !important;
+    }
+
+    body {
+        padding-bottom: 0;
+    }
+
+    /* HEADER: logo a la izq, navegación a la der */
+    .header-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-top {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+    }
+
+    nav ul {
+        display: flex !important;
+        flex-direction: row;
+        width: auto;
+        gap: 1.5rem;
+        margin-top: 0;
+        text-align: right;
+    }
+
+    nav ul li {
+        border-bottom: none;
+    }
+
+    nav ul li a {
+        padding: 0.5rem 0;
+    }
+
+    /* Contenido: más espacio lateral */
+    .container {
+        padding: 0 2rem;
+    }
+
+    /* Tarjetas: 2 columnas */
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Hero: texto más grande */
+    .hero h1 {
+        font-size: 3.8rem;
+        letter-spacing: 6px;
+    }
+
+    .hero p {
+        font-size: 1.6rem;
+    }
+
+    /* Mapa: altura mayor */
+    .map-placeholder {
+        height: 250px;
+    }
+
+    /* Formulario: dos columnas para nombre y apellido */
+    .form-row {
+        flex-direction: row !important;
+        gap: 1rem;
+    }
+
+    .form-row>* {
+        flex: 1;
+    }
+
+    /* ===== FOOTER: 2 columnas en tablet/escritorio ===== */
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+        text-align: left;
+    }
+
+    .social-icons {
+        justify-content: flex-start;
+    }
+}
+
+/* ----- Breakpoint: Desktop (1024px en adelante) ----- */
+@media screen and (min-width: 1024px) {
+
+    /* Tarjetas: 3 columnas */
+    .card-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Hero: más padding y altura */
+    .hero {
+        padding: 6rem 2rem;
+        min-height: 400px;
+    }
+
+    .hero h1 {
+        font-size: 5rem;
+    }
+
+    /* Mapa: más alto */
+    .map-placeholder {
+        height: 300px;
+    }
+
+    /* Más espacio lateral */
+    .container {
+        padding: 0 2rem;
+    }
+
+    /* Footer: más separación entre columnas */
+    .footer-grid {
+        gap: 4rem;
+    }
+}
+
+/* ----- Breakpoint: Pantallas grandes (1200px en adelante) ----- */
+@media screen and (min-width: 1200px) {
+    .container {
+        padding: 0 3rem;
+    }
+}
+/* ===== FOOTER EN ESCRITORIO (3 COLUMNAS) ===== */
+@media screen and (min-width: 640px) {
+    .footer-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        /* 3 columnas iguales */
+        gap: 2rem;
+        align-items: start;
+        /* alinear desde arriba */
+    }
+
+    /* Columna izquierda: texto a la izquierda */
+    .footer-col-left {
+        text-align: left;
+    }
+
+    /* Columna central: TODO centrado (iconos y texto) */
+    .footer-col-center {
+        text-align: center;
+    }
+
+    .footer-col-center .social-icons {
+        justify-content: center;
+        margin: 0;
+        /* quitar margen extra */
+    }
+
+    /* Columna derecha: texto a la derecha */
+    .footer-col-right {
+        text-align: right;
+    }
+}

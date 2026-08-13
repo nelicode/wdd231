@@ -1,0 +1,137 @@
+[
+    {
+        "id": 1,
+        "name": "Bean & Brew House",
+        "address": "123 Main St, Downtown",
+        "rating": 4.8,
+        "specialty": "Cold Brew",
+        "image": "images/1.jpeg",
+        "description": "Artisan roasters with a cozy atmosphere and the best cold brew in town."
+    },
+    {
+        "id": 2,
+        "name": "Roast & Relax",
+        "address": "456 Oak Ave, Uptown",
+        "rating": 4.6,
+        "specialty": "Espresso",
+        "image": "images/2.jpeg",
+        "description": "Perfect for espresso lovers, with single-origin beans from Ethiopia."
+    },
+    {
+        "id": 3,
+        "name": "Cafe Aurora",
+        "address": "789 Pine St, Riverside",
+        "rating": 4.9,
+        "specialty": "Pour Over",
+        "image": "images/3.jpeg",
+        "description": "Specialty pour-over coffees with a rotating selection of micro-lots."
+    },
+    {
+        "id": 4,
+        "name": "Mocha Madness",
+        "address": "101 Maple Dr, Eastside",
+        "rating": 4.3,
+        "specialty": "Mocha",
+        "image": "images/4.jpeg",
+        "description": "Decadent mochas and chocolate-infused drinks in a vibrant setting."
+    },
+    {
+        "id": 5,
+        "name": "The Daily Grind",
+        "address": "202 Cedar Ln, Westend",
+        "rating": 4.7,
+        "specialty": "Latte Art",
+        "image": "images/5.jpeg",
+        "description": "Known for beautiful latte art and a friendly neighborhood vibe."
+    },
+    {
+        "id": 6,
+        "name": "Mountain Roast",
+        "address": "303 Hilltop Rd, Highlands",
+        "rating": 4.4,
+        "specialty": "French Press",
+        "image": "images/6.jpeg",
+        "description": "Cozy mountain cabin feel with robust French press coffee."
+    },
+    {
+        "id": 7,
+        "name": "Urban Brew",
+        "address": "404 City Center Plaza",
+        "rating": 4.2,
+        "specialty": "Nitro Cold Brew",
+        "image": "images/7.jpeg",
+        "description": "Trendy urban spot serving smooth nitro cold brew on tap."
+    },
+    {
+        "id": 8,
+        "name": "Sunrise Coffee",
+        "address": "505 Sunrise Blvd, East",
+        "rating": 4.5,
+        "specialty": "Breakfast Blend",
+        "image": "images/8.jpeg",
+        "description": "Bright and early breakfast blends to start your day right."
+    },
+    {
+        "id": 9,
+        "name": "Golden Bean",
+        "address": "606 Golden St, Old Town",
+        "rating": 4.8,
+        "specialty": "Golden Latte",
+        "image": "images/9.jpeg",
+        "description": "Signature golden lattes with turmeric and honey, a local favorite."
+    },
+    {
+        "id": 10,
+        "name": "Eco Roast",
+        "address": "707 Green Ave, Eco Park",
+        "rating": 4.6,
+        "specialty": "Organic Blend",
+        "image": "images/10.jpeg",
+        "description": "100% organic, sustainably sourced beans roasted in-house."
+    },
+    {
+        "id": 11,
+        "name": "Cafe de la Casa",
+        "address": "808 Home St, Residential",
+        "rating": 4.1,
+        "specialty": "Cortado",
+        "image": "images/11.jpeg",
+        "description": "A homely cafe serving traditional Spanish cortados and pastries."
+    },
+    {
+        "id": 12,
+        "name": "Roastery X",
+        "address": "909 Industrial Way, Warehouse District",
+        "rating": 4.9,
+        "specialty": "Single Origin",
+        "image": "images/12.jpeg",
+        "description": "A roastery dedicated to showcasing the best single-origin coffees."
+    },
+    {
+        "id": 13,
+        "name": "Cream & Sugar",
+        "address": "1010 Sweet St, Midtown",
+        "rating": 4.3,
+        "specialty": "Flavored Lattes",
+        "image": "images/13.jpeg",
+        "description": "Fun flavored lattes with house-made syrups (vanilla, caramel, hazelnut)."
+    },
+    {
+        "id": 14,
+        "name": "Black Coffee Club",
+        "address": "1111 Noir Blvd, Downtown",
+        "rating": 4.7,
+        "specialty": "Black Drip",
+        "image": "images/14.jpeg",
+        "description": "Minimalist spot for purists who love a perfectly brewed black drip."
+    },
+    {
+        "id": 15,
+        "name": "Frosty Mugs",
+        "address": "1212 Ice Rd, Beachfront",
+        "rating": 4.0,
+        "specialty": "Iced Blends",
+        "image": "images/15.jpeg",
+        "description": "Beachside cafe specializing in refreshing iced coffee blends and smoothies."
+    }
+]

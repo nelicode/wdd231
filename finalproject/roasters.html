@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Spot - Menu</title>
+    <meta name="description" content="Full directory of local coffee roasters.">
+    <meta name="author" content="Your Name">
+    <meta property="og:title" content="Coffee Spot Menu">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☕</text></svg>">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+    <!-- ===== HEADER (fondo completo) ===== -->
+    <header>
+        <div class="header-container"> <!-- contenedor interno centrado -->
+            <div class="header-top">
+                <div class="logo">☕ Coffee Spot</div> <!-- izquierda -->
+                <button id="hamburger-btn" aria-label="Toggle navigation">☰</button> <!-- derecha en móvil -->
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="roasters.html" class="active">Menu</a></li> <!-- activo en esta página -->
+                    <li><a href="events.html">Join</a></li>
+                    <li><a href="attributions.html">Attributions</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== CONTENIDO PRINCIPAL ===== -->
+    <main>
+        </section>
+        <section class="hero"
+            style="background-image: linear-gradient(rgba(62,39,35,0.7), rgba(62,39,35,0.7)), url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=1200&h=600&fit=crop');">
+            <div class="container">
+                <h1>OUR FULL MENU</h1>
+                <p>Explore all 15 local roasters</p>
+            </div>
+        </section>
+
+        <!-- Contenido principal con .container para centrar y dar espacio -->
+        <div class="container">
+            <!-- Filtros -->
+            <div class="filter-bar">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="high-rated">⭐ High Rated (≥4.6)</button>
+                <button class="filter-btn" data-filter="cold-brew">🧊 Cold Brew</button>
+            </div>
+
+            <!-- Grid de tarjetas -->
+            <div id="all-roasters-grid" class="card-grid">
+                <!-- Dinámicamente llenado por JavaScript -->
+            </div>
+        </div>
+    </main>
+
+    <!-- ===== FOOTER (fondo completo) ===== -->
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <!-- Columna 1: Información de contacto (izquierda) -->
+            <div class="footer-col footer-col-left">
+                <h4>☕ Coffee Spot</h4>
+                <p>123 Coffee Street, Downtown</p>
+                <p>Lima, Peru</p>
+                <p>info@coffeespot.com</p>
+                <p>+51 987 654 321</p>
+            </div>
+
+            <!-- Columna 2: Redes sociales (centro) -->
+            <div class="footer-col footer-col-center">
+                <div class="social-icons">
+                    <a href="https://facebook.com/tupagina" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://instagram.com/tucuenta" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://twitter.com/tucuenta" target="_blank" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Columna 3: Créditos y derechos (derecha) -->
+            <div class="footer-col footer-col-right">
+                <p>&copy; 2026 Coffee Spot. All rights reserved.</p>
+                <p><a href="attributions.html">Terms &amp; Conditions</a> | <a href="#">Video Demo</a></p>
+                <p class="footer-credits">
+                    <strong>Your Name</strong> | WDD 231<br>
+                    <span id="last-modified"></span>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <!-- ===== BOTTOM NAV (solo móvil) ===== -->
+    <nav class="bottom-nav">
+        <a href="index.html"><span>🏠</span> HOME</a>
+        <a href="roasters.html" class="active"><span>📋</span> MENU</a>
+        <a href="events.html"><span>🤝</span> JOIN</a>
+    </nav>
+
+    <!-- ===== SCRIPTS ===== -->
+    <script type="module" src="scripts/roasters.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container"> <!-- nuevo contenedor interno -->
+            <div class="logo">☕ Coffee Spot</div>
+            <button id="hamburger-btn">☰</button>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="roasters.html">Menu</a></li>
+                    <li><a href="events.html">Join</a></li>
+                    <li><a href="attributions.html">Attributions</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container" style="padding:2rem 0;">
+            <h1>🙏 Thank You!</h1>
+            <p>You have successfully submitted the form.</p>
+            <div id="submission-data"
+                style="background:#FFF3E0; padding:1.5rem; border-radius:12px; border-left:6px solid #D84315;">
+                <p><strong>First Name:</strong> <span id="display-first"></span></p>
+                <p><strong>Last Name:</strong> <span id="display-last"></span></p>
+                <p><strong>Email:</strong> <span id="display-email"></span></p>
+                <p><strong>Phone:</strong> <span id="display-phone"></span></p>
+                <p><strong>Organization:</strong> <span id="display-org"></span></p>
+                <p><strong>Timestamp:</strong> <span id="display-ts"></span></p>
+            </div>
+            <a href="index.html" class="btn" style="margin-top:1rem;">Back to Home</a>
+        </div>
+    </main>
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <!-- Columna 1: Información de contacto (izquierda) -->
+            <div class="footer-col footer-col-left">
+                <h4>☕ Coffee Spot</h4>
+                <p>123 Coffee Street, Downtown</p>
+                <p>Lima, Peru</p>
+                <p>info@coffeespot.com</p>
+                <p>+51 987 654 321</p>
+            </div>
+
+            <!-- Columna 2: Redes sociales (centro) -->
+            <div class="footer-col footer-col-center">
+                <div class="social-icons">
+                    <a href="https://facebook.com/tupagina" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://instagram.com/tucuenta" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://twitter.com/tucuenta" target="_blank" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Columna 3: Créditos y derechos (derecha) -->
+            <div class="footer-col footer-col-right">
+                <p>&copy; 2026 Coffee Spot. All rights reserved.</p>
+                <p><a href="attributions.html">Terms &amp; Conditions</a> | <a href="#">Video Demo</a></p>
+                <p class="footer-credits">
+                    <strong>Your Name</strong> | WDD 231<br>
+                    <span id="last-modified"></span>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const params = new URLSearchParams(window.location.search);
+            document.getElementById('display-first').textContent = params.get('first-name') || 'N/A';
+            document.getElementById('display-last').textContent = params.get('last-name') || 'N/A';
+            document.getElementById('display-email').textContent = params.get('email') || 'N/A';
+            document.getElementById('display-phone').textContent = params.get('phone') || 'N/A';
+            document.getElementById('display-org').textContent = params.get('org') || 'N/A';
+            document.getElementById('display-ts').textContent = params.get('timestamp') || 'N/A';
+        });
+    </script>
+</body>
+
+</html>

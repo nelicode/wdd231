@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attributions - Coffee Spot</title>
+    <meta name="author" content="Your Name">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <!-- ===== HEADER (idéntico al de index.html) ===== -->
+    <header>
+        <div class="header-container">
+            <div class="header-top">
+                <div class="logo">☕ Coffee Spot</div>
+                <button id="hamburger-btn" aria-label="Toggle navigation">☰</button>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="roasters.html">Menu</a></li>
+                    <li><a href="events.html">Join</a></li>
+                    <li><a href="attributions.html" class="active">Attributions</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== CONTENIDO PRINCIPAL ===== -->
+    <main>
+        <div class="container" style="padding: 3rem 0;">
+            <h1
+                style="font-family: 'Playfair Display', serif; color: #3E2723; border-bottom: 3px solid #D84315; padding-bottom: 0.5rem;">
+                📚 Attributions
+            </h1>
+            <ul style="list-style: none; padding: 0; font-size: 1.1rem; line-height: 2;">
+                <li><strong>Coffee Roasters Data:</strong> Created for demonstration.</li>
+                <li><strong>Images:</strong> Placeholder from <a href="https://picsum.photos" target="_blank"
+                        style="color: #D84315;">Lorem Picsum</a>.</li>
+                <li><strong>Weather:</strong> <a href="https://open-meteo.com" target="_blank"
+                        style="color: #D84315;">Open-Meteo</a>.</li>
+                <li><strong>Fonts:</strong> Google Fonts (Playfair Display, Nunito).</li>
+                <li><strong>Icons:</strong> Font Awesome.</li>
+            </ul>
+            <p><a href="index.html" style="color: #D84315; font-weight: 600;">← Back to Home</a></p>
+        </div>
+    </main>
+
+    <!-- ===== FOOTER (idéntico al de index.html) ===== -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-col-left">
+                    <h4>☕ Coffee Spot</h4>
+                    <p>123 Coffee Street, Downtown</p>
+                    <p>Lima, Peru</p>
+                    <p>info@coffeespot.com</p>
+                    <p>+51 987 654 321</p>
+                </div>
+                <div class="footer-col footer-col-center">
+                    <div class="social-icons">
+                        <a href="https://facebook.com/tupagina" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://instagram.com/tucuenta" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/tucuenta" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col footer-col-right">
+                    <p>&copy; 2026 Coffee Spot. All rights reserved.</p>
+                    <p><a href="attributions.html">Terms &amp; Conditions</a> | <a href="#">Video Demo</a></p>
+                    <p class="footer-credits">
+                        <strong>Your Name</strong> | WDD 231<br>
+                        <span id="last-modified"></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== BOTTOM NAV (móvil) ===== -->
+    <nav class="bottom-nav">
+        <a href="index.html"><span>🏠</span> HOME</a>
+        <a href="roasters.html"><span>📋</span> MENU</a>
+        <a href="events.html"><span>🤝</span> JOIN</a>
+    </nav>
+
+    <!-- ===== SCRIPTS ===== -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Hamburguesa
+            const btn = document.getElementById('hamburger-btn');
+            const nav = document.querySelector('nav ul');
+            if (btn && nav) {
+                btn.addEventListener('click', () => nav.classList.toggle('open'));
+            }
+            // Fecha de última modificación
+            const lastMod = document.getElementById('last-modified');
+            if (lastMod) {
+                const now = new Date();
+                const options = { year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', second: '2-digit' };
+                lastMod.textContent = 'Last Modified: ' + now.toLocaleString('en-US', options);
+            }
+        });
+    </script>
+</body>
+
+</html>
